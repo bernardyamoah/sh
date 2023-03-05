@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- SEO Meta Tags -->
+		<meta name="description" content="" />
+		<!--Your description-->
+		<meta name="author" content="Bernard Yamoah" />
+
+		<!-- OG Meta Tags to improve the way the post looks when you share the page on Facebook, Twitter, LinkedIn -->
+		<meta property="og:site" content="https://slideshub.netlify.app/" />
+		<!-- website link -->
+		<meta property="og:title" content="Materials Engineering" />
+		<!-- title shown in the actual shared post -->
+		<meta
+			property="og:description"
+			content="Do you find yourself constantly struggling to keep up with your schoolwork?
+
+Do you have trouble accessing your lecture slides or finding the right books for your courses? SlidesHub is here to help! With our easy-to-use platform, you can quickly and easily access all the resources you need to succeed in your courses."
+		/>
+		<!-- description shown in the actual shared post -->
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="website" />
+		<meta
+			property="og:url"
+			content="https://slideshub.netlify.app/programs/materials/materials.html"
+		/>
+
+		<meta
+			property="og:image"
+			content="https://lh3.google.com/u/1/d/12IbkYvgKPGqBb68rUCmzu3LDQAZ7VKDP=w375-k-nu-iv1"
+		/>
+
+		<!-- Twitter -->
+		<meta property="twitter:card" content="summary_large_image" />
+		<meta
+			property="twitter:url"
+			content="https://slideshub.netlify.app/programs/materials/materials.html"
+		/>
+		<meta property="twitter:title" content="Materials Engineering" />
+		<meta property="twitter:description" content="" />
+		<meta
+			property="twitter:image"
+			content="https://lh3.google.com/u/1/d/12IbkYvgKPGqBb68rUCmzu3LDQAZ7VKDP=w375-k-nu-iv1"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="../../assets/favicon_io/apple-touch-icon.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="../../assets/favicon_io/favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="../../assets/favicon_io/favicon-16x16.png"
+		/>
+		<link rel="manifest" href="../../assets/favicon_io/site.webmanifest" />
+		<!--Now you should have a nifty little image next to your site's title!-->
+
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="https://unpkg.com/scrollreveal"></script>
+		<script async src="https://cdn.splitbee.io/sb.js"></script>
+
+		<link rel="stylesheet" href="../../css/styles.css" />
+		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+
+		<script>
+			// On page load or when changing themes, best to add inline in `head` to avoid FOUC
+			if (
+				localStorage.getItem("color-theme") === "dark" ||
+				(!("color-theme" in localStorage) &&
+					window.matchMedia("(prefers-color-scheme: dark)").matches)
+			) {
+				document.documentElement.classList.add("dark");
+			} else {
+				document.documentElement.classList.remove("dark");
+			}
+		</script>
+
+		<title>Environmental Science</title>
+	</head>
+
+	<body>
+		<div id="wrapper" class="wrapper">
+			<div id="spinner" class="spinner"></div>
+		</div>
+		<nav
+			class="nav-bar fixed top-0 left-0 z-50 flex bg-white dark:bg-slate-900/90 dark:backdrop-blur-xl lg:space-x-6"
+		>
+			<div class="flex w-full items-center justify-between">
+				<!-- Hamburger Menu -->
+				<div class="md:hidden">
+					<button
+						type="button"
+						class="hs-collapse-toggle inline-flex items-center justify-center gap-2 rounded-md border bg-white p-2.5 align-middle text-sm font-medium text-gray-700 shadow-sm transition hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-emerald-600 focus:ring-offset-2 focus:ring-offset-white dark:border-gray-700 dark:bg-slate-900 dark:text-gray-400 dark:hover:bg-slate-800 dark:hover:text-white dark:focus:ring-offset-gray-800"
+						data-hs-overlay="#hs-overlay-basic"
+						aria-controls="hs-overlay-basic"
+						aria-label="Toggle navigation"
+					>
+						<svg
+							class="h-4 w-4 hs-collapse-open:hidden"
+							width="16"
+							height="16"
+							fill="currentColor"
+							viewBox="0 0 16 16"
+						>
+							<path
+								fill-rule="evenodd"
+								d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+							></path>
+						</svg>
+						<svg
+							class="hidden h-4 w-4 hs-collapse-open:block"
+							width="16"
+							height="16"
+							fill="currentColor"
+							viewBox="0 0 16 16"
+						>
+							<path
+								d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"
+							></path>
+						</svg>
+					</button>
+				</div>
+				<!-- Logo -->
+				<a class="flex items-center space-x-2" href="../../index.html">
+					<img
+						src="../../assets/img/logo-icon-dark.png"
+						class="logo_icon_dark"
+						alt="logo"
+					/>
+					<img
+						src="../../assets/img/logo-icon-light.png"
+						class="logo_icon_light"
+						alt="logo"
+					/>
+					<span class="logo_text">SlidesHub</span
+					><span class="h-1 w-1 rounded-full bg-emerald-500"></span>
+				</a>
+
+				<!-- Nav List -->
+				<ul
+					class="nav-links hidden justify-between text-slate-900 dark:text-white md:flex"
+				>
+					<li><a href="../../index.html">Home</a></li>
+					<li><a href="../../programs.html">Programmes</a></li>
+					<li><a href="../../about.html">About Us</a></li>
+					<li><a href="../../contact.html">Contact Us</a></li>
+				</ul>
+
+				<!-- Dark/Light Mode Button -->
+				<button id="theme-toggle" type="button" class="dark_mode_button ml-0">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						class="dark_icon hidden"
+						id="theme-toggle-dark-icon"
+						fill="none"
+						viewBox="0 0 24 24"
+						stroke="currentColor"
+					>
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							stroke-width="2"
+							d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
+						/>
+					</svg>
+
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						id="theme-toggle-light-icon"
+						class="light_icon hidden"
+						fill="none"
+						viewBox="0 0 24 24"
+						stroke="currentColor"
+					>
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							stroke-width="2"
+							d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"
+						/>
+					</svg>
+				</button>
+				<!-- End of Dark/Light mode Button -->
+			</div>
+		</nav>
+
+		<!--Mobile sidebar -->
+		<div
+			id="hs-overlay-basic"
+			class="hs-overlay scrollbar-y dark:scrollbar-y fixed top-0 left-0 bottom-0 z-[60] hidden w-full -translate-x-full transform overflow-y-auto border-r border-gray-200 bg-white pt-7 pb-10 backdrop-blur-xl transition-all duration-300 hs-overlay-open:translate-x-0 dark:border-gray-700 dark:bg-slate-900/[.8] lg:right-auto lg:bottom-0 lg:hidden lg:translate-x-0"
+		>
+			<div class="flex items-center justify-between px-6">
+				<a class="sidebar_logo" href="../../index.html" aria-label="Brand"
+					>SlidesHub <span class="text-emerald-500">.</span>
+				</a>
+
+				<button
+					type="button"
+					class="inline-flex h-8 w-8 items-center justify-center gap-2 rounded-md border border-gray-200 text-gray-600 transition hover:text-gray-400 dark:border-gray-500"
+					data-hs-overlay="#hs-overlay-basic"
+					aria-controls="hs-overlay-basic"
+					aria-label="Toggle navigation"
+				>
+					<span class="sr-only">Close Sidebar</span>
+					<svg
+						class="h-4 w-4 dark:text-slate-100"
+						width="16"
+						height="16"
+						fill="currentColor"
+						viewBox="0 0 16 16"
+					>
+						<path
+							d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"
+						/>
+					</svg>
+				</button>
+			</div>
+
+			<nav class="sidebar_nav">
+				<ul class="sidebar_ul">
+					<li>
+						<a class="sidebar_nav_item" href="../../index.html"> Home </a>
+					</li>
+					<li>
+						<a class="sidebar_nav_item" href="../../programs.html">
+							Programs
+						</a>
+					</li>
+					<li>
+						<a class="sidebar_nav_item" href="../../about.html"> About Us </a>
+					</li>
+					<li>
+						<a class="sidebar_nav_item" href="./contact.html"> Contact Us </a>
+					</li>
+				</ul>
+			</nav>
+			<!--------- Switch Toggle --------->
+		</div>
+		<!-- End of  Sidebar -->
+
+		<main class="card_container mt-10">
+			<h1 class="programme-title">Environmental Science</h1>
+
+			<!-- ============================  PROGRAMS SECTION  ================================ -->
+			<section
+				class="container relative mx-auto flex flex-col items-center pb-10"
+				id="program"
+			>
+				<ul class="year_cards_container">
+					<!-- Bsc Materials engineering card -->
+					<a class="year_card-link group" href="./environmental_1stYear.html">
+						<div class="card_image_wrapper">
+							<img
+								class="card_image group-hover:scale-105"
+								src="https://th.bing.com/th/id/R.c7181975099637eac7a942ebbfa352a4?rik=fNVWLNgZtf7nEQ&pid=ImgRaw&r=0"
+								alt="Image Description"
+							/>
+						</div>
+						<div class="text_container">
+							<h3 class="card_heading">Level 100</h3>
+						</div>
+					</a>
+					<!-- Bsc Metallurgical engineering -->
+					<a class="year_card-link group" href="./environmental_2ndYear.html">
+						<div class="card_image_wrapper">
+							<img
+								class="card_image group-hover:scale-105"
+								src="https://media.istockphoto.com/id/582317486/photo/asian-college-student-working-on-botany.jpg?b=1&s=170667a&w=0&k=20&c=pP6mpB88rHVvG5YpL_70guHwpVZTdkG-2AZTadfbTPc="
+								alt="Image Description"
+							/>
+						</div>
+						<div class="text_container">
+							<h3 class="card_heading">level 200</h3>
+						</div>
+					</a>
+
+					<a class="year_card-link group" href="./environmental_3rdYear.html">
+						<div class="card_image_wrapper">
+							<img
+								class="card_image group-hover:scale-105"
+								src="https://media.istockphoto.com/id/1313932993/photo/scientist-measuring-water-depth-to-install-water-level-data-loggers-in-a-coastal-wetland.jpg?b=1&s=170667a&w=0&k=20&c=CIzPhLqYN4qqGAMCY_4nL46zf4UMvedD4HCadK2TbMg="
+								alt="Image Description"
+							/>
+						</div>
+						<div class="text_container">
+							<h3 class="card_heading">level 300</h3>
+						</div>
+					</a>
+
+					<a class="year_card-link group" href="./environmental_4thYear.html">
+						<div class="card_image_wrapper">
+							<img
+								class="card_image group-hover:scale-105"
+								src="data:image/jpeg;base64,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"
+								alt="Image Description"
+							/>
+						</div>
+						<div class="text_container">
+							<h3 class="card_heading">level 400</h3>
+						</div>
+					</a>
+				</ul>
+			</section>
+		</main>
+
+		<footer class="footer">
+			<div class="footer_content_wrapper">
+				<div class="footer_link_wrapper">
+					<a
+						href="https://web.facebook.com/bernard.amoah.334"
+						target="_blank"
+						class="footer_links"
+					>
+						<span class="sr-only">Facebook</span>
+						<svg
+							class="h-6 w-6"
+							aria-hidden="true"
+							fill="currentColor"
+							viewBox="0 0 24 24"
+						>
+							<path
+								fill-rule="evenodd"
+								d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+								clip-rule="evenodd"
+							></path>
+						</svg>
+					</a>
+					<a
+						href="https://www.instagram.com/be_r_n_ard"
+						target="_blank"
+						class="footer_links"
+					>
+						<span class="sr-only">Instagram</span>
+						<svg
+							class="h-6 w-6"
+							aria-hidden="true"
+							fill="currentColor"
+							viewBox="0 0 24 24"
+						>
+							<path
+								fill-rule="evenodd"
+								d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+								clip-rule="evenodd"
+							></path>
+						</svg>
+					</a>
+					<a
+						href="https://twitter.com/byayamoah"
+						target="_blank"
+						class="footer_links"
+					>
+						<span class="sr-only">Twitter</span>
+						<svg
+							class="h-6 w-6"
+							aria-hidden="true"
+							fill="currentColor"
+							viewBox="0 0 24 24"
+						>
+							<path
+								d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"
+							></path>
+						</svg>
+					</a>
+					<a
+						href="https://github.com/bernardyamoah/"
+						target="_blank"
+						class="footer_links"
+					>
+						<span class="sr-only">GitHub</span>
+						<svg
+							class="h-6 w-6"
+							aria-hidden="true"
+							fill="currentColor"
+							viewBox="0 0 24 24"
+						>
+							<path
+								fill-rule="evenodd"
+								d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+								clip-rule="evenodd"
+							></path>
+						</svg>
+					</a>
+				</div>
+				<p class="footer_copyright">
+					© <span id="year"></span> BartLabs, Inc. All rights reserved.
+				</p>
+			</div>
+		</footer>
+
+		<!-- <script src="../../js/jquery-1.11.3.min.js"></script> -->
+
+		<script src="../../js/index.js"></script>
+		<script src="../../js/preline.js"></script>
+		<script src="https://unpkg.com/flowbite@1.5.5/dist/flowbite.js"></script>
+		<script src="../../js/main.js"></script>
+	</body>
+</html>

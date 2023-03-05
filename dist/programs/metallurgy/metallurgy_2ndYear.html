@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+          <!-- SEO Meta Tags -->
+       <meta name="description" content=""><!--Your description-->
+       <meta name="author" content="SlidesHub">
+   
+       <!-- OG Meta Tags to improve the way the post looks when you share the page on Facebook, Twitter, LinkedIn -->
+      <meta property="og:site" content="https://slideshub.netlify.app/" /> <!-- website link -->
+    <meta property="og:title" content="SlidesHub" /> <!-- title shown in the actual shared post -->
+    <meta property="og:description" content="Do you find yourself constantly struggling to keep up with your schoolwork?
+
+Do you have trouble accessing your lecture slides or finding the right books for your courses? SlidesHub is here to help! With our easy-to-use platform, you can quickly and easily access all the resources you need to succeed in your courses." /> <!-- description shown in the actual shared post -->
+    <meta property="og:image" content="https://slideshub.netlify.app/assets/favicon_io/thumbnail.jpg" /> <!-- image link, make sure it's jpg -->
+       <meta property="og:url" content="https://slideshub.netlify.app/" /> <!-- where do you want your post to link to -->
+       <meta name="twitter:card" content="summary_large_image"> <!-- to have large image post format in Twitter -->
+       <!--Place these in the <head> section of your HTML-->
+           <link rel="apple-touch-icon" sizes="180x180" href="../../assets/favicon_io/apple-touch-icon.png">
+           <link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon_io/favicon-32x32.png">
+           <link rel="icon" type="image/png" sizes="16x16" href="../../assets/favicon_io/favicon-16x16.png">
+           <link rel="manifest" href="../../assets/favicon_io/site.webmanifest">
+       <!--Now you should have a nifty little image next to your site's title!-->
+     <!-- split bee script -->
+      <script async src="https://cdn.splitbee.io/sb.js"></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css" />
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+  
+        <script src="https://unpkg.com/scrollreveal"></script><script async src="https://cdn.splitbee.io/sb.js"></script>
+        <link rel="stylesheet" href="../../css/styles.css">
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    
+    <!-- Unicons CSS -->
+    <link
+      rel="stylesheet"
+      href=""
+    />
+        <script>
+            // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+            if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+                document.documentElement.classList.add('dark');
+            } else {
+                document.documentElement.classList.remove('dark')
+            }
+        </script>
+       
+       
+        <title>Metallurgical Engineering Second Year</title>
+    </head>
+    
+    <body>
+      <div id="wrapper" class="wrapper">
+        <div id="spinner" class="spinner"></div>
+      </div>
+      <nav
+      class="nav-bar fixed top-0 left-0 z-50 flex bg-white dark:bg-slate-900/90 dark:backdrop-blur-xl lg:space-x-6"
+    >
+      <div class="flex w-full items-center justify-between">
+        <!-- Hamburger Menu -->
+        <div class="md:hidden">
+          <button
+            type="button"
+            class="hs-collapse-toggle inline-flex items-center justify-center gap-2 rounded-md border bg-white p-2.5 align-middle text-sm font-medium text-gray-700 shadow-sm transition hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-emerald-600 focus:ring-offset-2 focus:ring-offset-white dark:border-gray-700 dark:bg-slate-900 dark:text-gray-400 dark:hover:bg-slate-800 dark:hover:text-white dark:focus:ring-offset-gray-800"
+            data-hs-overlay="#hs-overlay-basic"
+            aria-controls="hs-overlay-basic"
+            aria-label="Toggle navigation"
+          >
+            <svg
+              class="h-4 w-4 hs-collapse-open:hidden"
+              width="16"
+              height="16"
+              fill="currentColor"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+              ></path>
+            </svg>
+            <svg
+              class="hidden h-4 w-4 hs-collapse-open:block"
+              width="16"
+              height="16"
+              fill="currentColor"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"
+              ></path>
+            </svg>
+          </button>
+        </div>
+        <!-- Logo -->
+        <a class="flex items-center space-x-2" href="../../index.html">
+          <img
+            src="../../assets/img/logo-icon-dark.png"
+            class="logo_icon_dark"
+            alt="logo"
+          />
+          <img
+            src="../../assets/img/logo-icon-light.png"
+            class="logo_icon_light"
+            alt="logo"
+          />
+          <span class="logo_text">SlidesHub</span
+          ><span class="h-1 w-1 rounded-full bg-emerald-500"></span>
+        </a>
+
+        <!-- Nav List -->
+        <ul
+          class="nav-links hidden justify-between text-slate-900 dark:text-white md:flex"
+        >
+          <li class="navbar_item"><a href="../../index.html">Home</a></li>
+          <li class="navbar_item">
+            <a href="../../programs.html">Programmes</a>
+          </li>
+          <li class="navbar_item"><a href="../../about.html">About Us</a></li>
+          <li class="navbar_item">
+            <a href="../../contact.html">Contact Us</a>
+          </li>
+        </ul>
+
+        <i
+          class="uil uil-search search-icon text-slate-700 dark:text-white"
+          id="searchIcon"
+        ></i>
+        
+        <div
+          class="search-box w-full lg:right-80 lg:max-w-[25rem] xl:right-[30rem]"
+        >
+          <i class="uil uil-search search-icon"></i>
+          <input
+            autocomplete="on"
+            aria-label="Search"
+            type="search"
+            id="myInput"
+            name="search"
+            class="searchbar"
+            placeholder="Search a word (course, course-code)"
+          />
+        </div>
+      </div>
+      <!-- Dark/Light Mode Button -->
+      <button id="theme-toggle" type="button" class="dark_mode_button">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="dark_icon hidden"
+          id="theme-toggle-dark-icon"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
+          />
+        </svg>
+
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          id="theme-toggle-light-icon"
+          class="light_icon hidden"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"
+          />
+        </svg>
+      </button>
+      <!-- End of Dark/Light mode Button -->
+    </nav>
+
+    <!--Mobile sidebar -->
+    <div
+      id="hs-overlay-basic"
+      class="hs-overlay scrollbar-y dark:scrollbar-y fixed top-0 left-0 bottom-0 z-[60] hidden w-full -translate-x-full transform overflow-y-auto border-r border-gray-200 bg-white pt-7 pb-10 backdrop-blur-xl transition-all duration-300 hs-overlay-open:translate-x-0 dark:border-gray-700 dark:bg-slate-900/[.8] lg:right-auto lg:bottom-0 lg:hidden lg:translate-x-0"
+    >
+      <div class="flex items-center justify-between px-6">
+        <a class="sidebar_logo" href="../../index.html" aria-label="Brand"
+          >SlidesHub <span class="text-emerald-500">.</span>
+        </a>
+
+        <button
+          type="button"
+          class="inline-flex h-8 w-8 items-center justify-center gap-2 rounded-md border border-gray-200 text-gray-600 transition hover:text-gray-400 dark:border-gray-500"
+          data-hs-overlay="#hs-overlay-basic"
+          aria-controls="hs-overlay-basic"
+          aria-label="Toggle navigation"
+        >
+          <span class="sr-only">Close Sidebar</span>
+          <svg
+            class="h-4 w-4 dark:text-slate-100"
+            width="16"
+            height="16"
+            fill="currentColor"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"
+            />
+          </svg>
+        </button>
+      </div>
+
+      <nav class="sidebar_nav">
+        <ul class="sidebar_ul">
+          <li>
+            <a class="sidebar_nav_item" href="../../index.html">
+          
+
+              Home
+            </a>
+          </li>
+          <li>
+            <a class="sidebar_nav_item" href="../../programs.html">
+            
+
+              Programs
+            </a>
+          </li>
+          <li>
+            <a class="sidebar_nav_item" href="../../about.html">
+              
+
+              About Us
+            </a>
+          </li>
+          <li>
+            <a class="sidebar_nav_item" href="./contact.html">
+              
+
+              Contact Us
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!--------- Switch Toggle --------->
+    
+    </div>
+    <!-- End of  Sidebar -->
+
+
+<main class="card_container  " >
+
+
+  <section class=" relative mx-auto  flex flex-col items-center py-10">
+
+<div id="myUL">
+            <div class="programme-title"><h2 class="mb-10">First Semester</h2></div>
+
+
+  <ul class="cards_container">
+   <!-- Card 1 -->
+   <li class="program_card ">            
+    
+    
+
+   <a class="flex flex-col group bg-white border shadow-sm rounded-xl overflow-hidden hover:shadow-lg transition dark:bg-gray-800 dark:border-gray-700 dark:shadow-slate-700/[.7]"
+   href="https://drive.google.com/drive/u/1/folders/12OM8W0jMFF23BJmGYEx-KG8Pul-612J4">
+   <div class="relative pt-[50%] sm:pt-[60%] lg:pt-[80%] rounded-t-xl overflow-hidden">
+     <img
+       class="w-full h-full absolute top-0 left-0 object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-t-xl" loading="lazy"
+       src="https://media.gettyimages.com/photos/world-best-civil-engineers-picture-id1203215964?k=20&m=1203215964&s=612x612&w=0&h=ck1twU6GPRAalMJhaCkDbjRxypuEheaAvnpnrT03J_E=" alt="Image Description">
+   </div>
+   <div class="text_container">
+     <span class=" course-code ">CENG 291</span>
+     <h3 class="card_heading">
+       Engineering in Society
+     </h3>
+   
+   </div>
+ </a>
+ </li>
+ <!-- Card 2 -->
+ <li class="program_card ">            
+    
+   <a class="flex flex-col group bg-white border shadow-sm rounded-xl overflow-hidden hover:shadow-lg transition dark:bg-gray-800 dark:border-gray-700 dark:shadow-slate-700/[.7]"
+   href="https://drive.google.com/drive/u/1/folders/10zJpValf9_JINf0cTLgngzfCjbDS_ZbL">
+   <div class="relative pt-[50%] sm:pt-[60%] lg:pt-[80%] rounded-t-xl overflow-hidden">
+     <img
+       class="w-full h-full absolute top-0 left-0 object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-t-xl" loading="lazy"
+       src="https://media.gettyimages.com/photos/male-student-writing-on-blackboard-picture-id695513260?k=20&m=695513260&s=612x612&w=0&h=i27UgKpjEudp023N47HMUPoGcRQiNZAWMVXB6uPNGR4=" alt="Image Description">
+   </div>
+   <div class="text_container">
+     <span class=" course-code ">MATH 251</span>
+     <h3 class="card_heading">
+        Differential Equations
+     </h3>
+   
+   </div>
+ </a>
+ </li>
+
+ <!-- Card 3-->
+ <li class="program_card ">            
+    
+   <a class="flex flex-col group bg-white border shadow-sm rounded-xl overflow-hidden hover:shadow-lg transition dark:bg-gray-800 dark:border-gray-700 dark:shadow-slate-700/[.7]"
+   href="https://drive.google.com/drive/u/1/folders/115svrOoFzKaBBR-Sdfe_clblH_0A1zts">
+   <div class="relative pt-[50%] sm:pt-[60%] lg:pt-[80%] rounded-t-xl overflow-hidden">
+     <img
+       class="w-full h-full absolute top-0 left-0 object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-t-xl" loading="lazy"
+       src="https://images.slideplayer.com/24/7057670/slides/slide_22.jpg" alt="Image Description">
+   </div>
+   <div class="text_container">
+     <span class=" course-code ">MSE 251</span>
+     <h3 class="card_heading">
+         Momentum Transport
+     </h3>
+   
+   </div>
+ </a>
+ </li>
+
+
+  <!-- Card 4-->
+  <li class="program_card ">            
+    
+   <a class="flex flex-col group bg-white border shadow-sm rounded-xl overflow-hidden hover:shadow-lg transition dark:bg-gray-800 dark:border-gray-700 dark:shadow-slate-700/[.7]"
+   href="">
+   <div class="relative pt-[50%] sm:pt-[60%] lg:pt-[80%] rounded-t-xl overflow-hidden">
+     <img
+       class="w-full h-full absolute top-0 left-0 object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-t-xl" loading="lazy"
+       src="../../assets/img/indigenous processing.jpg" alt="Image Description">
+   </div>
+   <div class="text_container">
+     <span class=" course-code ">MSE 257</span>
+     <h3 class="card_heading">
+        Indigenous Processing
+     </h3>
+   
+   </div>
+ </a>
+ </li>
+
+  <!-- Card 5-->
+  <li class="program_card ">            
+    
+   <a class="flex flex-col group bg-white border shadow-sm rounded-xl overflow-hidden hover:shadow-lg transition dark:bg-gray-800 dark:border-gray-700 dark:shadow-slate-700/[.7]"
+   href="https://drive.google.com/drive/u/1/folders/11g79QLB3Od7EubTwT4hDAq3c515SuSkZ">
+   <div class="relative pt-[50%] sm:pt-[60%] lg:pt-[80%] rounded-t-xl overflow-hidden">
+     <img
+       class="w-full h-full absolute top-0 left-0 object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-t-xl" loading="lazy"
+       src="../../assets/img/properties of engineering materials.jpg" alt="Image Description">
+   </div>
+   <div class="text_container">
+     <span class=" course-code ">MSE 255</span>
+     <h3 class="card_heading">
+         Properties of Engineering Materials
+     </h3>
+   
+   </div>
+ </a>
+ </li>
+
+  <!-- Card 6-->
+  <li class="program_card ">            
+    
+    
+
+   <a class="flex flex-col group bg-white border shadow-sm rounded-xl overflow-hidden hover:shadow-lg transition dark:bg-gray-800 dark:border-gray-700 dark:shadow-slate-700/[.7]"
+   href="https://drive.google.com/drive/u/1/folders/119JvS_mpB4dd-Eqh_J3u-7OPxR2C6H9y">
+   <div class="relative pt-[50%] sm:pt-[60%] lg:pt-[80%] rounded-t-xl overflow-hidden">
+     <img
+       class="w-full h-full absolute top-0 left-0 object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-t-xl" loading="lazy"
+       src="https://media.istockphoto.com/id/1323182170/photo/gold-silver-rough-diamonds-bauxite-pyrolusite-galena-pyrite-chromite-lepidolite-chalcopyrite.jpg?b=1&s=170667a&w=0&k=20&c=LUhpnbmJfusljWpUF8juDqpTJVi0_dBPZ81epUAK0QQ=" alt="Image Description">
+   </div>
+   <div class="text_container">
+     <span class=" course-code ">GED 251</span>
+     <h3 class="card_heading">
+         Mineralogy
+     </h3>
+   </div>
+ </a>
+ </li>
+
+  <!-- Card 7-->
+  <li class="program_card ">            
+    
+    
+
+   <a class="flex flex-col group bg-white border shadow-sm rounded-xl overflow-hidden hover:shadow-lg transition dark:bg-gray-800 dark:border-gray-700 dark:shadow-slate-700/[.7]"
+   href="https://drive.google.com/drive/u/1/folders/111bf9e3ig9tC87TAaSQEsdWg5-VwPb-l">
+   <div class="relative pt-[50%] sm:pt-[60%] lg:pt-[80%] rounded-t-xl overflow-hidden">
+     <img
+       class="w-full h-full absolute top-0 left-0 object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-t-xl" loading="lazy"
+       src="https://www.grc.nasa.gov/www/BGH/Images/thermo1.gif" alt="Image Description">
+   </div>
+   <div class="text_container">
+     <span class=" course-code ">METE 251</span>
+     <h3 class="card_heading">
+         Metallurgical Thermodynamics
+     </h3>
+   </div>
+ </a>
+ </li>
+
+  <!-- Card 8-->
+  <li class="program_card ">            
+    
+    
+
+   <a class="flex flex-col group bg-white border shadow-sm rounded-xl overflow-hidden hover:shadow-lg transition dark:bg-gray-800 dark:border-gray-700 dark:shadow-slate-700/[.7]"
+   href="https://drive.google.com/drive/u/1/folders/10surGIRJvBGr0AYpmyc56RrBaMSzlanH">
+   <div class="relative pt-[50%] sm:pt-[60%] lg:pt-[80%] rounded-t-xl overflow-hidden">
+     <img
+       class="w-full h-full absolute top-0 left-0 object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-t-xl" loading="lazy"
+       src="../../assets/img/mechanical behaviour of materials.jpg" alt="Image Description">
+   </div>
+   <div class="text_container">
+     <span class=" course-code ">MSE 253</span>
+     <h3 class="card_heading">
+         Mechanical Behavior of Materials
+     </h3>
+   
+   </div>
+ </a>
+ </li>
+
+</ul>
+
+          <div class="programme-title"><h2 class="mb-10">Second Semester</h2></div>
+
+
+<ul class="cards_container">
+<!-- ------------Card 1---------- -->
+<li class="program_card ">            
+
+
+<!-- Bsc Materials engineering card -->
+<a class="flex flex-col group bg-white border shadow-sm rounded-xl overflow-hidden hover:shadow-lg transition dark:bg-gray-800 dark:border-gray-700 dark:shadow-slate-700/[.7]"
+href="https://drive.google.com/drive/u/1/folders/12cfh8cmPvesavSxbRLDN14Ih08Wezq2L">
+<div class="relative pt-[50%] sm:pt-[60%] lg:pt-[80%] rounded-t-xl overflow-hidden">
+<img
+  class="w-full h-full absolute top-0 left-0 object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-t-xl" loading="lazy"
+  src="../../assets/img/Assaying.jpg" alt="Image Description">
+</div>
+<div class="text_container">
+<span class=" course-code ">METE 256</span>
+<h3 class="card_heading">
+  Assaying
+</h3>
+
+</div>
+</a>
+</li>
+<!-- ====================================================================== -->
+<!-- -------------Card 2------------- -->
+
+<li class="program_card ">            
+
+
+<!-- Bsc Materials engineering card -->
+<a class="flex flex-col group bg-white border shadow-sm rounded-xl overflow-hidden hover:shadow-lg transition dark:bg-gray-800 dark:border-gray-700 dark:shadow-slate-700/[.7]"
+href="https://drive.google.com/drive/u/1/folders/13-5nUODfONRf7UpkraXKzwwNmI2pYRDJ">
+<div class="relative pt-[50%] sm:pt-[60%] lg:pt-[80%] rounded-t-xl overflow-hidden">
+<img
+class="w-full h-full absolute top-0 left-0 object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-t-xl" loading="lazy"
+src="data:image/png;base64,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" alt="Image Description">
+</div>
+<div class="text_container">
+<span class=" course-code ">METE 252</span>
+<h3 class="card_heading">
+ Metallurgical Rate Processes | Surface Phenomena
+</h3>
+
+</div>
+</a>
+</li>
+<!-- ============================================================== -->
+<!------------- Card 3---------- -->
+<li class="program_card ">            
+
+
+<!-- Bsc Materials engineering card -->
+<a class="flex flex-col group bg-white border shadow-sm rounded-xl overflow-hidden hover:shadow-lg transition dark:bg-gray-800 dark:border-gray-700 dark:shadow-slate-700/[.7]"
+href="https://drive.google.com/drive/u/1/folders/13DeJMH-mja-8DLmNh6kUuY16rYyejUL3">
+<div class="relative pt-[50%] sm:pt-[60%] lg:pt-[80%] rounded-t-xl overflow-hidden">
+<img
+class="w-full h-full absolute top-0 left-0 object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-t-xl" loading="lazy"
+src="../../assets/img/Phase_diagram_of_water.png" alt="Image Description">
+</div>
+<div class="text_container">
+<span class=" course-code ">MSE 260</span>
+<h3 class="card_heading">
+ Phase Transformation
+</h3>
+
+</div>
+</a>
+</li>
+
+<!-- ================================================= -->
+<!-- Card 4 -->
+<li class="program_card ">            
+
+
+<!-- Bsc Materials engineering card -->
+<a class="flex flex-col group bg-white border shadow-sm rounded-xl overflow-hidden hover:shadow-lg transition dark:bg-gray-800 dark:border-gray-700 dark:shadow-slate-700/[.7]"
+href="https://drive.google.com/drive/u/1/folders/13B7V1dE1qj8FBqcCq36XLWcZ0rmPgO_W">
+<div class="relative pt-[50%] sm:pt-[60%] lg:pt-[80%] rounded-t-xl overflow-hidden">
+<img
+class="w-full h-full absolute top-0 left-0 object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-t-xl" loading="lazy"
+src="../../assets/img/mass transport.png" alt="Image Description">
+</div>
+<div class="text_container">
+<span class=" course-code ">MSE 252</span>
+<h3 class="card_heading">
+Heat and Mass Transport
+</h3>
+
+</div>
+</a>
+</li>
+
+<!-- ========================================= -->
+<!-- Card 5 -->
+<li class="program_card ">            
+
+
+<!-- Bsc Materials engineering card -->
+<a class="flex flex-col group bg-white border shadow-sm rounded-xl overflow-hidden hover:shadow-lg transition dark:bg-gray-800 dark:border-gray-700 dark:shadow-slate-700/[.7]"
+href="https://drive.google.com/drive/u/1/folders/138YTZO1CkQKnOD5MAk0kl5GRvT6w7H11">
+<div class="relative pt-[50%] sm:pt-[60%] lg:pt-[80%] rounded-t-xl overflow-hidden">
+<img
+class="w-full h-full absolute top-0 left-0 object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-t-xl" loading="lazy"
+src="https://media.istockphoto.com/id/1287289801/photo/gold-bars-laying-on-black-background.jpg?b=1&s=170667a&w=0&k=20&c=HSrS7ZHHE8uYxZ4dxsgRU6pL0sjUDP6_b5Kqr__pRm4=" alt="Image Description">
+</div>
+<div class="text_container">
+<span class=" course-code ">METE 254</span>
+<h3 class="card_heading">
+ Ore Beneficiation 
+</h3>
+
+</div>
+</a>
+</li>
+
+<!-- Card 6 -->
+<!-- ============================== -->
+
+<li class="program_card ">            
+
+
+<!-- Bsc Materials engineering card -->
+<a class="flex flex-col group bg-white border shadow-sm rounded-xl overflow-hidden hover:shadow-lg transition dark:bg-gray-800 dark:border-gray-700 dark:shadow-slate-700/[.7]"
+href="https://drive.google.com/drive/u/1/folders/136JDSwtfDw7ypHdFPVzIdq8lSBMofvrl">
+<div class="relative pt-[50%] sm:pt-[60%] lg:pt-[80%] rounded-t-xl overflow-hidden">
+<img
+class="w-full h-full absolute top-0 left-0 object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-t-xl" loading="lazy"
+src="../../assets/img/calculus with several variables.jpg" alt="Image Description">
+</div>
+<div class="text_container">
+<span class=" course-code ">MATH 252</span>
+<h3 class="card_heading">
+ Calculus with Several Variables
+</h3>
+
+</div>
+</a>
+</li>
+
+<!-- Card 7 -->
+
+<li class="program_card ">            
+
+
+<!-- Bsc Materials engineering card -->
+<a class="flex flex-col group bg-white border shadow-sm rounded-xl overflow-hidden hover:shadow-lg transition dark:bg-gray-800 dark:border-gray-700 dark:shadow-slate-700/[.7]"
+href="https://drive.google.com/drive/u/1/folders/137g4JBbw-ZFRd52E_0P1lG7fvWHXrrTI">
+<div class="relative pt-[50%] sm:pt-[60%] lg:pt-[80%] rounded-t-xl overflow-hidden">
+<img
+class="w-full h-full absolute top-0 left-0 object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-t-xl" loading="lazy"
+src="../../assets/img/matlab.jpg" alt="Image Description">
+</div>
+<div class="text_container">
+<span class=" course-code ">METE 258</span>
+<h3 class="card_heading">
+ Computer programming and application
+</h3>
+
+</div>
+</a>
+</li>
+
+
+
+
+
+
+
+
+
+</ul>
+</ol>
+</section>
+</main>
+     
+
+ 
+ 
+
+</div>
+
+
+
+      <!-- FOOTER SECTION -->
+
+      <footer class="footer">
+        <div class="max-w-screen-xl px-4 py-12 mx-auto space-y-8 overflow-hidden sm:px-6 lg:px-8">
+    
+          <div class="flex justify-center mt-8 space-x-6">
+            <a href="https://web.facebook.com/bernard.amoah.334" target="_blank"
+              class="text-gray-200 hover:bg-emerald-200 hover:text-emerald-600 rounded-full p-2">
+              <span class="sr-only">Facebook</span>
+              <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 24 24">
+                <path fill-rule="evenodd"
+                  d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                  clip-rule="evenodd"></path>
+              </svg>
+            </a>
+            <a href="https://www.instagram.com/be_r_n_ard" target="_blank"
+              class="text-gray-200 hover:bg-emerald-200 hover:text-emerald-600 rounded-full p-2">
+              <span class="sr-only">Instagram</span>
+              <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 24 24">
+                <path fill-rule="evenodd"
+                  d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                  clip-rule="evenodd"></path>
+              </svg>
+            </a>
+            <a href="https://twitter.com/byayamoah" target="_blank"
+              class="text-gray-200 hover:bg-emerald-200 hover:text-emerald-600 rounded-full p-2">
+              <span class="sr-only">Twitter</span>
+              <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84">
+                </path>
+              </svg>
+            </a>
+            <a href="https://github.com/bernardyamoah/" target="_blank"
+              class="text-gray-200 hover:bg-emerald-200 hover:text-emerald-600 rounded-full p-2">
+              <span class="sr-only">GitHub</span>
+              <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 24 24">
+                <path fill-rule="evenodd"
+                  d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                  clip-rule="evenodd"></path>
+              </svg>
+            </a>
+    
+          </div>
+          <p class="mt-8 text-xs leading-6 text-center text-gray-200">
+            © <span id="year"></span> BartLabs, Inc. All rights reserved.
+          </p>
+        </div>
+      </footer>
+
+<!-- ========= END OF FOOTER SECTION --> 
+ 
+
+    <!-- Scripts -->
+    <script src="../../js/index.js"></script>
+    <script src="../../js/preline.js"></script>
+    <script src="https://unpkg.com/flowbite@1.5.5/dist/flowbite.js"></script>
+    <script src="../../js/main.js"></script>
+    <script src="../../js/search.js"></script>
+
+</body>
+
+</html>
