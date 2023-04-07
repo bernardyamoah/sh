@@ -1,18 +1,23 @@
 
-
-
-
-
 const themeToggleDarkIcon = document.getElementById('theme-toggle-dark-icon');
 const themeToggleLightIcon = document.getElementById('theme-toggle-light-icon');
-const links=document.querySelectorAll('a')
+const links=document.querySelectorAll('a');
+
 for (let b = 0 ; b < links.length; b++) {
     links[b].setAttribute('rel','noopener noreferrer')
     links[b].setAttribute('title','links')
     console.log(links[b].getAttribute('rel'))
 }
 
-
+const dochead = document.querySelector('head');
+  dochead.append( `<!-- Google tag (gtag.js) --> 
+  <script defer async src="https://www.googletagmanager.com/gtag/js?id=G-SRYLXFEQXE"></script> 
+  <script defer> 
+    window.dataLayer = window.dataLayer || []; 
+    function gtag(){dataLayer.push(arguments);} 
+    gtag('js', new Date()); 
+    gtag('config', 'G-SRYLXFEQXE'); 
+  </script>`)
 
 
 
@@ -161,6 +166,31 @@ for (let i = 0; i < cardDetail.length; i++) {
     }
     })
   }
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
