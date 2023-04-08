@@ -6,18 +6,34 @@ const links=document.querySelectorAll('a');
 for (let b = 0 ; b < links.length; b++) {
     links[b].setAttribute('rel','noopener noreferrer')
     links[b].setAttribute('title','links')
-    console.log(links[b].getAttribute('rel'))
+
+}
+const gId= 'G-SRYLXFEQXE'
+
+
+// Funtion to inject Google Analytics Tag manager into Head
+function googleAnalytics(measurementId) {
+    const gTagmanager=document.createElement('script')
+    gTagmanager.setAttribute('async','')
+    gTagmanager.src='https://www.googletagmanager.com/gtag/js?id=' + measurementId
+    document.head.appendChild(gTagmanager) 
+
+
+    const inlineScript= document.createElement('script')
+    inlineScript.innerHTML=`  window.dataLayer = window.dataLayer || []; 
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date()); 
+    gtag('config',  '`+  measurementId +`');` 
+
+console.log(measurementId)
+document.head.appendChild(inlineScript) 
 }
 
-const dochead = document.querySelector('head');
-  dochead.append( `<!-- Google tag (gtag.js) --> 
-  <script defer async src="https://www.googletagmanager.com/gtag/js?id=G-SRYLXFEQXE"></script> 
-  <script defer> 
-    window.dataLayer = window.dataLayer || []; 
-    function gtag(){dataLayer.push(arguments);} 
-    gtag('js', new Date()); 
-    gtag('config', 'G-SRYLXFEQXE'); 
-  </script>`)
+// Calling the GoogleAnalytics funtion
+googleAnalytics(gId)
+
+ 
+
 
 
 
