@@ -25,7 +25,7 @@ function googleAnalytics(measurementId) {
     gtag('js', new Date()); 
     gtag('config',  '`+  measurementId +`');` 
 
-console.log(measurementId)
+
 document.head.appendChild(inlineScript) 
 }
 
