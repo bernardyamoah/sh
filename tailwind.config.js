@@ -7,12 +7,19 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-      },
+      fontFamily: {
+        // body: ["Valera Round", "sans-serif"],
+        // title :["Syne", "serif"],
+        body: ["Inter", "sans-serif"],
+        title :["Raleway", "sans-serif"],
+        },  screens: {
+          'xs': '430px',
+          // => @media (min-width: 992px) { ... }
+        },
     },
   },
-  plugins: [],
+  plugins: [
+    require('flowbite'),
+  require('preline/plugin')
+  ],
 }
