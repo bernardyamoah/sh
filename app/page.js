@@ -1,101 +1,101 @@
+import Image from 'next/image';
+import Head from 'next/head';
+
 export default function Home() {
   return (
     <>
-    
-	<head>
-		<meta name="description" content="" />
-		{/* <!--Your description--> */}
-		<meta name="author" content="Bernard Yamoah" />
+	<Head>
+	<meta name="description" content="" />
+	{/* <!--Your description--> */}
+	<meta name="author" content="Bernard Yamoah" />
 
-		{/* <!-- OG Meta Tags to improve the way the post looks when you share the page on Facebook, Twitter, LinkedIn --> */}
-		<meta property="og:site_name" content="SlidesHub" />
-		{/* <!-- website name --> */}
-		<meta property="og:site" content="https://slideshub.netlify.app/" />
-		{/* <!-- website link --> */}
-		<meta property="og:title" content=" Welcome to SlidesHub" />
-		{/* <!-- title shown in the actual shared post --> */}
-		<meta
-			property="og:description"
-			content="Do you find yourself constantly struggling to keep up with your schoolwork?
+	{/* <!-- OG Meta Tags to improve the way the post looks when you share the page on Facebook, Twitter, LinkedIn --> */}
+	<meta property="og:site_name" content="SlidesHub" />
+	{/* <!-- website name --> */}
+	<meta property="og:site" content="https://slideshub.netlify.app/" />
+	{/* <!-- website link --> */}
+	<meta property="og:title" content=" Welcome to SlidesHub" />
+	{/* <!-- title shown in the actual shared post --> */}
+	<meta
+		property="og:description"
+		content="Do you find yourself constantly struggling to keep up with your schoolwork?
 Do you have trouble accessing your lecture slides or finding the right books for your courses? SlidesHub is here to help! With our easy-to-use platform, you can quickly and easily access all the resources you need to succeed in your courses."
-		/>
-		{/* <!-- description shown in the actual shared post -->
-		<!-- Open Graph / Facebook --> */}
-		<meta property="og:type" content="website" />
-		<meta property="og:url" content="https://slideshub.netlify.app/" />
+	/>
+	{/* <!-- description shown in the actual shared post -->
+	<!-- Open Graph / Facebook --> */}
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://slideshub.netlify.app/" />
 
-		<meta
-			property="og:image"
-			content="https://slideshub.netlify.app/assets/favicon_io/thumbnail.jpg"
-		/>
-		<meta property="og:image:type" content="image/jpeg" />
-		<meta property="og:image:width" content="400" />
-		<meta property="og:image:height" content="300" />
-		<meta property="og:image:alt" content="SlidesHub Image" />
-		{/* <!-- Twitter --> */}
-		<meta property="twitter:ani-card" content="summary_large_image" />
-		<meta property="twitter:url" content="https://slideshub.netlify.app/" />
-		<meta property="twitter:title" content="Welcome To SlidesHub" />
-		<meta
-			property="twitter:description"
-			content="Do you find yourself constantly struggling to keep up with your schoolwork?
+	<meta
+		property="og:image"
+		content="https://slideshub.netlify.app/assets/favicon_io/thumbnail.jpg"
+	/>
+	<meta property="og:image:type" content="image/jpeg" />
+	<meta property="og:image:width" content="400" />
+	<meta property="og:image:height" content="300" />
+	<meta property="og:image:alt" content="SlidesHub Image" />
+	{/* <!-- Twitter --> */}
+	<meta property="twitter:ani-card" content="summary_large_image" />
+	<meta property="twitter:url" content="https://slideshub.netlify.app/" />
+	<meta property="twitter:title" content="Welcome To SlidesHub" />
+	<meta
+		property="twitter:description"
+		content="Do you find yourself constantly struggling to keep up with your schoolwork?
 Do you have trouble accessing your lecture slides or finding the right books for your courses? SlidesHub is here to help! With our easy-to-use platform, you can quickly and easily access all the resources you need to succeed in your courses."
-		/>
-		<meta
-			property="twitter:image"
-			content="https://slideshub.netlify.app/assets/favicon_io/thumbnail.jpg"
-		/>
-		{/* <!--Place these in the <head> section of your HTML--> */}
-		<link
-			rel="apple-touch-icon"
-			sizes="180x180"
-			href="./assets/favicon_io/apple-touch-icon.png"
-		/>
-		<link
-			rel="icon"
-			type="image/png"
-			sizes="32x32"
-			href="./assets/favicon_io/favicon-32x32.png"
-		/>
+	/>
+	<meta
+		property="twitter:image"
+		content="https://slideshub.netlify.app/assets/favicon_io/thumbnail.jpg"
+	/>
+	{/* <!--Place these in the <head> section of your HTML--> */}
+	<link
+		rel="apple-touch-icon"
+		sizes="180x180"
+		href="./assets/favicon_io/apple-touch-icon.png"
+	/>
+	<link
+		rel="icon"
+		type="image/png"
+		sizes="32x32"
+		href="./assets/favicon_io/favicon-32x32.png"
+	/>
 
-		<link rel="manifest" href="./assets/favicon_io/site.webmanifest" />
-		<link rel="stylesheet" defer href="./css/styles.css" />
-		<script src="https://unpkg.com/scrollreveal"></script>
-		<script
-			defer
-			src="https://unpkg.com/alpinejs@3.10.5/dist/cdn.min.js"
-		></script>
-		<script async src="https://cdn.splitbee.io/sb.js"></script>
-		<link
-			rel="stylesheet"
-			href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
-		/>
+	<link rel="manifest" href="./assets/favicon_io/site.webmanifest" />
+	
+	<script src="https://unpkg.com/scrollreveal"></script>
+	<script
+		defer
+		src="https://unpkg.com/alpinejs@3.10.5/dist/cdn.min.js"
+	></script>
+	<script async src="https://cdn.splitbee.io/sb.js"></script>
+	<link
+		rel="stylesheet"
+		href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+	/>
 
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="icon" href="./assets/favicon_io/favicon.ico" />
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="icon" href="./assets/favicon_io/favicon.ico" />
 
-		
-		<title>SlidesHub</title>
-	</head>
-
-	<body>
+	
+	<title>SlidesHub</title>
+</Head>
+	
 	
 		<nav
-			class="nav-bar fixed top-0 left-0 z-50 flex bg-white dark:bg-slate-900/90 dark:backdrop-blur-xl lg:space-x-6"
-		>
-			<div class="flex w-full items-center justify-between">
+			className="nav-bar fixed top-0 left-0 z-50 flex bg-white dark:bg-slate-900/90 dark:backdrop-blur-xl lg:space-x-6">
+			<div className="flex w-full items-center justify-between">
 				{/* <!-- Hamburger Menu --> */}
-				<div class="md:hidden">
+				<div className="md:hidden">
 					<button
 						type="button"
-						class="hs-collapse-toggle inline-flex items-center justify-center gap-2 rounded-md border bg-white p-2.5 align-middle text-sm font-medium text-gray-700 shadow-sm transition hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-emerald-600 focus:ring-offset-2 focus:ring-offset-white dark:border-gray-700 dark:bg-slate-900 dark:text-gray-400 dark:hover:bg-slate-800 dark:hover:text-white dark:focus:ring-offset-gray-800"
+						className="hs-collapse-toggle inline-flex items-center justify-center gap-2 rounded-md border bg-white p-2.5 align-middle text-sm font-medium text-gray-700 shadow-sm transition hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-emerald-600 focus:ring-offset-2 focus:ring-offset-white dark:border-gray-700 dark:bg-slate-900 dark:text-gray-400 dark:hover:bg-slate-800 dark:hover:text-white dark:focus:ring-offset-gray-800"
 						data-hs-overlay="#hs-overlay-basic"
 						aria-controls="hs-overlay-basic"
 						aria-label="Toggle navigation"
 					>
 						<svg
-							class="hs-collapse-open:hidden h-4 w-4"
+							className="hs-collapse-open:hidden h-4 w-4"
 							width="16"
 							height="16"
 							fill="currentColor"
@@ -107,7 +107,7 @@ Do you have trouble accessing your lecture slides or finding the right books for
 							></path>
 						</svg>
 						<svg
-							class="hs-collapse-open:block hidden h-4 w-4"
+							className="hs-collapse-open:block hidden h-4 w-4"
 							width="16"
 							height="16"
 							fill="currentColor"
@@ -120,36 +120,39 @@ Do you have trouble accessing your lecture slides or finding the right books for
 					</button>
 				</div>
 				{/* <!-- Logo --> */}
-				<a class="flex items-center space-x-2" href="./index.html">
-					<img
-						src="./assets/img/logo-icon-dark.png"
-						class="logo_icon_dark"
+				<a className="flex items-center space-x-2" href="/">
+					<Image
+					width={144}
+					height={144}
+						src="/assets/img/logo-icon-dark.png"
+						className="logo_icon_dark"
+						alt="logo"/>
+				
+					<Image
+					width={140}
+					height={140}
+						src="/assets/img/logo-icon-light.png"
+						className="logo_icon_light"
 						alt="logo"
 					/>
-					<img
-						src="./assets/img/logo-icon-light.png"
-						class="logo_icon_light"
-						alt="logo"
-					/>
-					<span class="logo_text">SlidesHub</span
-					><span class="h-1 w-1 rounded-full bg-emerald-500"></span>
+					<span className="logo_text">SlidesHub</span><span className="h-1 w-1 rounded-full bg-emerald-500"></span>
 				</a>
 
 				{/* <!-- Nav List --> */}
 				<ul
-					class="nav-links hidden justify-between text-slate-900 dark:text-white md:flex"
+					className="nav-links hidden justify-between text-slate-900 dark:text-white md:flex"
 				>
-					<li><a href="./index.html">Home</a></li>
+					<li><a href="/">Home</a></li>
 					<li><a href="./programs.html">Programmes</a></li>
 					<li><a href="./about.html">About Us</a></li>
 					<li><a href="./contact.html">Contact Us</a></li>
 				</ul>
 
 				{/* <!-- Dark/Light Mode Button --> */}
-				<button id="theme-toggle" title="theme-toggle" type="button" class="dark_mode_button">
+				<button id="theme-toggle" title="theme-toggle" type="button" className="dark_mode_button">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
-						class="dark_icon hidden"
+						className="dark_icon hidden"
 						id="theme-toggle-dark-icon"
 						fill="none"
 						viewBox="0 0 24 24"
@@ -166,7 +169,7 @@ Do you have trouble accessing your lecture slides or finding the right books for
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
 						id="theme-toggle-light-icon"
-						class="light_icon hidden"
+						className="light_icon hidden"
 						fill="none"
 						viewBox="0 0 24 24"
 						stroke="currentColor"
@@ -186,23 +189,23 @@ Do you have trouble accessing your lecture slides or finding the right books for
 		{/* <!--Mobile sidebar --> */}
 		<div
 			id="hs-overlay-basic"
-			class="hs-overlay scrollbar-y dark:scrollbar-y hs-overlay-open:translate-x-0 fixed top-0 left-0 bottom-0 z-[60] hidden w-full -translate-x-full transform overflow-y-auto border-r border-slate-200 bg-white pt-7 pb-10 backdrop-blur-xl transition-all duration-300 dark:border-slate-700 dark:bg-slate-900/[.8] lg:right-auto lg:bottom-0 lg:hidden lg:translate-x-0"
+			className="hs-overlay scrollbar-y dark:scrollbar-y hs-overlay-open:translate-x-0 fixed top-0 left-0 bottom-0 z-[60] hidden w-full -translate-x-full transform overflow-y-auto border-r border-slate-200 bg-white pt-7 pb-10 backdrop-blur-xl transition-all duration-300 dark:border-slate-700 dark:bg-slate-900/[.8] lg:right-auto lg:bottom-0 lg:hidden lg:translate-x-0"
 		>
-			<div class="flex items-center justify-between px-6">
-				<a class="sidebar_logo" href="./index.html" aria-label="Brand"
-					>SlidesHub <span class="text-emerald-500">.</span>
+			<div className="flex items-center justify-between px-6">
+				<a className="sidebar_logo" href="/" aria-label="Brand"
+					>SlidesHub <span className="text-emerald-500">.</span>
 				</a>
 
 				<button
 					type="button"
-					class="inline-flex h-8 w-8 items-center justify-center gap-2 rounded-md border border-slate-200 text-slate-600 transition hover:text-slate-400 dark:border-slate-500"
+					className="inline-flex h-8 w-8 items-center justify-center gap-2 rounded-md border border-slate-200 text-slate-600 transition hover:text-slate-400 dark:border-slate-500"
 					data-hs-overlay="#hs-overlay-basic"
 					aria-controls="hs-overlay-basic"
 					aria-label="Toggle navigation"
 				>
-					<span class="sr-only">Close Sidebar</span>
+					<span className="sr-only">Close Sidebar</span>
 					<svg
-						class="h-4 w-4 dark:text-slate-100"
+						className="h-4 w-4 dark:text-slate-100"
 						width="16"
 						height="16"
 						fill="currentColor"
@@ -215,34 +218,34 @@ Do you have trouble accessing your lecture slides or finding the right books for
 				</button>
 			</div>
 
-			<nav class="sidebar_nav">
-				<ul class="sidebar_ul">
+			<nav className="sidebar_nav">
+				<ul className="sidebar_ul">
 					<li>
-						<a class="sidebar_nav_item" href="./index.html"> Home </a>
+						<a className="sidebar_nav_item" href="/"> Home </a>
 					</li>
 					<li>
-						<a class="sidebar_nav_item" href="./programs.html"> Programs </a>
+						<a className="sidebar_nav_item" href="./programs.html"> Programs </a>
 					</li>
 					<li>
-						<a class="sidebar_nav_item" href="./about.html"> About Us </a>
+						<a className="sidebar_nav_item" href="./about.html"> About Us </a>
 					</li>
 					<li>
-						<a class="sidebar_nav_item" href="./contact.html"> Contact Us </a>
+						<a className="sidebar_nav_item" href="./contact.html"> Contact Us </a>
 					</li>
 				</ul>
 			</nav>
 		</div>
 		{/* <!-- End of  Sidebar --> */}
 
-		<main class="dark:backdrop-blur-sm">
+		<main className="dark:backdrop-blur-sm">
 			{/* <!-- Hero section --> */}
-			<section class="pattern mt-20 flex items-center justify-center py-10">
-				<div class="mx-auto max-w-5xl text-center">
-					<h1 class="ani-card font-bold dark:text-white md:text-5xl">
+			<section className="pattern mt-20 flex items-center justify-center py-10">
+				<div className="mx-auto max-w-5xl text-center">
+					<h1 className="ani-card font-bold dark:text-white md:text-5xl">
 						What is Slideshub ?
 					</h1>
 					<p
-						class="ani-card mx-auto mt-5 mb-10 max-w-3xl text-lg font-medium text-slate-600 dark:text-slate-400 lg:text-xl"
+						className="ani-card mx-auto mt-5 mb-10 max-w-3xl text-lg font-medium text-slate-600 dark:text-slate-400 lg:text-xl"
 					>
 						Slideshub is an online solution to downloading and printing lecture
 						slides and books. You get easy-to-use and free access to a variety
@@ -251,17 +254,17 @@ Do you have trouble accessing your lecture slides or finding the right books for
 					<picture>
 						<source srcset="./assets/img/hero-image-2.png" type="image" />
 						<img
-							class="ani-card rounded-3xl"
+							className="ani-card rounded-3xl"
 							src="./assets/img/hero-image-2.png"
 							alt="Slideshub image"
 							loading="lazy"
 						/>
 					</picture>
-					<div class="text-center">
+					<div className="text-center">
 						<a
 							data-splitbee-event="Get Started"
 							href="./programs.html"
-							class="hero_btn"
+							className="hero_btn"
 						>
 							Get Started
 						</a>
@@ -269,23 +272,23 @@ Do you have trouble accessing your lecture slides or finding the right books for
 				</div>
 			</section>
 
-			<div class="pattern relative mt-20 px-5 pb-20 md:px-8 lg:px-16">
-				<div class="relative w-full">
-					<div class="w-full text-black dark:text-white">
+			<div className="pattern relative mt-20 px-5 pb-20 md:px-8 lg:px-16">
+				<div className="relative w-full">
+					<div className="w-full text-black dark:text-white">
 						<div
-							class="mx-auto flex flex-col pt-10 md:grid md:grid-cols-2 md:gap-x-10 md:pt-20 lg:gap-x-20"
+							className="mx-auto flex flex-col pt-10 md:grid md:grid-cols-2 md:gap-x-10 md:pt-20 lg:gap-x-20"
 						>
 							{/* <!-- Hero Text --> */}
 							<div
-								class="ani-card order-1 mx-auto mt-10 w-full text-center md:text-left"
+								className="ani-card order-1 mx-auto mt-10 w-full text-center md:text-left"
 							>
-								<div class="text-center md:text-left">
+								<div className="text-center md:text-left">
 									<h1
-										class="font-title text-2xl font-extrabold text-black dark:text-white sm:text-3xl md:text-5xl xl:text-6xl"
+										className="font-title text-2xl font-extrabold text-black dark:text-white sm:text-3xl md:text-5xl xl:text-6xl"
 									>
 										Your Ultimate Resource for Educational Materials
 									</h1>
-									<p class="mt-4 text-slate-600 dark:text-slate-400 lg:text-xl">
+									<p className="mt-4 text-slate-600 dark:text-slate-400 lg:text-xl">
 										SlidesHub is an education website that provides students
 										with a wide range of high-quality study materials, including
 										slides, presentations, e-books, and more.
@@ -296,7 +299,7 @@ Do you have trouble accessing your lecture slides or finding the right books for
 									<a
 										data-splitbee-event="Get Started"
 										href="./programs.html"
-										class="hero_btn"
+										className="hero_btn"
 									>
 										Get Started
 									</a>
@@ -304,9 +307,9 @@ Do you have trouble accessing your lecture slides or finding the right books for
 							</div>
 
 							{/* <!-- Hero Image --> */}
-							<div class="ani-card order-0 w-full md:order-1">
+							<div className="ani-card order-0 w-full md:order-1">
 								<img
-									class="w-full object-contain object-center sm:scale-105"
+									className="w-full object-contain object-center sm:scale-105"
 									src="./assets/img/details-1.png"
 									alt="Online Learning"
 								/>
@@ -318,17 +321,17 @@ Do you have trouble accessing your lecture slides or finding the right books for
 			</div>
 
 			{/* <!-- Features Section --> */}
-			<section class="pattern flex items-center justify-center py-10">
-				<div class="max-w-screen py-10">
-					<div class="mt-32 space-y-10">
-						<div class="ani-card writeup mx-auto mb-20">
+			<section className="pattern flex items-center justify-center py-10">
+				<div className="max-w-screen py-10">
+					<div className="mt-32 space-y-10">
+						<div className="ani-card writeup mx-auto mb-20">
 							<h2>Here's what what you'll love about Slideshub</h2>
 						</div>
 						{/* <!-- Feature cards --> */}
-						<div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+						<div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
 							{/* <!-- free Download--> */}
-							<aside class="ani-card aside_card group transition-all">
-								<div class="aside_icon bg-emerald-500 group-hover:scale-110">
+							<aside className="ani-card aside_card group transition-all">
+								<div className="aside_icon bg-emerald-500 group-hover:scale-110">
 									<svg
 										xmlns="http://www.w3.org/2000/svg"
 										fill="white"
@@ -340,17 +343,17 @@ Do you have trouble accessing your lecture slides or finding the right books for
 									</svg>
 								</div>
 
-								<h2 class="feature_heading">Free and Unlimited download</h2>
+								<h2 className="feature_heading">Free and Unlimited download</h2>
 
-								<p class="feature_description">
+								<p className="feature_description">
 									You can search through our database of slides and books,
 									download them for free to read offline.
 								</p>
 							</aside>
 {/* 
 							<!-- Save time --> */}
-							<aside class="ani-card aside_card group transition-all">
-								<div class="aside_icon bg-emerald-500 group-hover:scale-110">
+							<aside className="ani-card aside_card group transition-all">
+								<div className="aside_icon bg-emerald-500 group-hover:scale-110">
 									<svg
 										xmlns="http://www.w3.org/2000/svg"
 										fill="white"
@@ -361,17 +364,17 @@ Do you have trouble accessing your lecture slides or finding the right books for
 										/>
 									</svg>
 								</div>
-								<h2 class="feature_heading">Quality content you trust</h2>
+								<h2 className="feature_heading">Quality content you trust</h2>
 
-								<p class="feature_description">
+								<p className="feature_description">
 									All files are checked for viruses before they are uploaded to
 									the website, so you can be sure that you are downloading safe
 									content.
 								</p>
 							</aside>
 							{/* <!-- Weekly Update --> */}
-							<aside class="ani-card aside_card group transition-all">
-								<div class="aside_icon bg-emerald-500 group-hover:scale-110">
+							<aside className="ani-card aside_card group transition-all">
+								<div className="aside_icon bg-emerald-500 group-hover:scale-110">
 									<svg
 										xmlns="http://www.w3.org/2000/svg"
 										fill="white"
@@ -382,17 +385,17 @@ Do you have trouble accessing your lecture slides or finding the right books for
 										/>
 									</svg>
 								</div>
-								<h2 class="feature_heading">Weekly Update</h2>
+								<h2 className="feature_heading">Weekly Update</h2>
 
-								<p class="feature_description">
+								<p className="feature_description">
 									Books and lecture slides by lecturers will be uploaded here
 									weekly.
 								</p>
 							</aside>
 
 							{/* <!-- organized files --> */}
-							<aside class="ani-card aside_card group transition-all">
-								<div class="aside_icon bg-emerald-500 group-hover:scale-110">
+							<aside className="ani-card aside_card group transition-all">
+								<div className="aside_icon bg-emerald-500 group-hover:scale-110">
 									<svg
 										xmlns="http://www.w3.org/2000/svg"
 										fill="white"
@@ -404,16 +407,16 @@ Do you have trouble accessing your lecture slides or finding the right books for
 										/>
 									</svg>
 								</div>
-								<h2 class="feature_heading">Organized Files</h2>
+								<h2 className="feature_heading">Organized Files</h2>
 
-								<p class="feature_description">
+								<p className="feature_description">
 									All the needed books and lecture slides have been collated
 									together, into programs and years of study.
 								</p>
 							</aside>
 						
-							<aside class="ani-card aside_card group transition-all">
-								<div class="aside_icon bg-emerald-500 group-hover:scale-110">
+							<aside className="ani-card aside_card group transition-all">
+								<div className="aside_icon bg-emerald-500 group-hover:scale-110">
 									<svg
 										xmlns="http://www.w3.org/2000/svg"
 										fill="white"
@@ -425,9 +428,9 @@ Do you have trouble accessing your lecture slides or finding the right books for
 									</svg>
 								</div>
 
-								<h2 class="feature_heading">User friendly Interface</h2>
+								<h2 className="feature_heading">User friendly Interface</h2>
 
-								<p class="feature_description">
+								<p className="feature_description">
 									With just a few clicks you can find what you need on Slideshub
 									- download it without hassle.
 								</p>
@@ -438,39 +441,39 @@ Do you have trouble accessing your lecture slides or finding the right books for
 			</section>
 
 		
-			<section class="pattern bg-white py-10 dark:bg-slate-900/5">
-				<div class="mx-auto max-w-6xl py-10">
-					<p class="text-xl font-medium text-emerald-500">Testimonials</p>
+			<section className="pattern bg-white py-10 dark:bg-slate-900/5">
+				<div className="mx-auto max-w-6xl py-10">
+					<p className="text-xl font-medium text-emerald-500">Testimonials</p>
 
 					<h1
-						class="mt-2 text-3xl font-semibold capitalize text-gray-800 dark:text-white lg:text-4xl"
+						className="mt-2 text-3xl font-semibold capitalize text-gray-800 dark:text-white lg:text-4xl"
 					>
 						What users are saying
 					</h1>
 
 					<main
-						class="relative z-20 mt-8 w-full md:flex md:items-center xl:mt-12"
+						className="relative z-20 mt-8 w-full md:flex md:items-center xl:mt-12"
 					>
 						<div
-							class="absolute -z-10 w-full rounded-2xl bg-emerald-600 md:h-96"
+							className="absolute -z-10 w-full rounded-2xl bg-emerald-600 md:h-96"
 						></div>
 
 						<div
-							class="swiper mySwiper w-full rounded-2xl bg-gradient-to-bl from-red-500 via-red-600 to-red-700 p-6 shadow-lg md:flex md:items-center md:justify-evenly md:bg-none md:p-0 md:shadow-none lg:px-12"
+							className="swiper mySwiper w-full rounded-2xl bg-gradient-to-bl from-red-500 via-red-600 to-red-700 p-6 shadow-lg md:flex md:items-center md:justify-evenly md:bg-none md:p-0 md:shadow-none lg:px-12"
 						>
-							<div class="swiper-wrapper flex">
+							<div className="swiper-wrapper flex">
 								
-								<div class="swiper-slide">
-									<div class="p-6 md:flex md:items-center md:space-x-10">
-										<div class="md:w-1/2">
-											<picture class="inline-block">
+								<div className="swiper-slide">
+									<div className="p-6 md:flex md:items-center md:space-x-10">
+										<div className="md:w-1/2">
+											<picture className="inline-block">
 												<source
 													srcset="
 														https://images.unsplash.com/photo-1488508872907-592763824245?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80
 													"
 												/>
 												<img
-													class="aspect-square h-2/6 w-2/6 rounded-full object-cover shadow-md md:!h-[32rem] md:!w-full md:rounded-2xl lg:h-[36rem] lg:w-[26rem]"
+													className="aspect-square h-2/6 w-2/6 rounded-full object-cover shadow-md md:!h-[32rem] md:!w-full md:rounded-2xl lg:h-[36rem] lg:w-[26rem]"
 													src="https://images.unsplash.com/photo-1488508872907-592763824245?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
 													alt="client photo"
 													loading="lazy"
@@ -478,20 +481,20 @@ Do you have trouble accessing your lecture slides or finding the right books for
 											</picture>
 										</div>
 
-										<div class="mt-2 md:w-1/2">
+										<div className="mt-2 md:w-1/2">
 											<p
-												class="font-title text-xl font-bold tracking-wide text-white lg:text-3xl"
+												className="font-title text-xl font-bold tracking-wide text-white lg:text-3xl"
 											>
 												Ema Watson
 											</p>
 											<span
-												class="mt-2 inline-block rounded-md bg-red-800 px-2 py-1 text-xs text-white shadow-xl backdrop-blur-lg md:bg-emerald-800"
+												className="mt-2 inline-block rounded-md bg-red-800 px-2 py-1 text-xs text-white shadow-xl backdrop-blur-lg md:bg-emerald-800"
 											>
 												BSc Materials Engineering, KNUST
 											</span>
 
 											<p
-												class="font-body mt-4 text-sm leading-relaxed text-white sm:text-base md:text-lg lg:text-xl"
+												className="font-body mt-4 text-sm leading-relaxed text-white sm:text-base md:text-lg lg:text-xl"
 											>
 												“Lorem ipsum dolor sit amet, consectetur adipisicing
 												elit. Tempore quibusdam ducimus libero ad tempora
@@ -502,17 +505,17 @@ Do you have trouble accessing your lecture slides or finding the right books for
 									</div>
 								</div>
 								
-								<div class="swiper-slide">
-									<div class="p-6 md:flex md:items-center md:space-x-10">
-										<div class="md:w-1/2">
-											<picture class="inline-block">
+								<div className="swiper-slide">
+									<div className="p-6 md:flex md:items-center md:space-x-10">
+										<div className="md:w-1/2">
+											<picture className="inline-block">
 												<source
 													srcset="
 														https://images.unsplash.com/photo-1488508872907-592763824245?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80
 													"
 												/>
 												<img
-													class="aspect-square h-2/6 w-2/6 rounded-full object-cover shadow-md md:!h-[32rem] md:!w-full md:rounded-2xl lg:h-[36rem] lg:w-[26rem]"
+													className="aspect-square h-2/6 w-2/6 rounded-full object-cover shadow-md md:!h-[32rem] md:!w-full md:rounded-2xl lg:h-[36rem] lg:w-[26rem]"
 													src="https://images.unsplash.com/photo-1488508872907-592763824245?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
 													alt="client photo"
 													loading="lazy"
@@ -520,20 +523,20 @@ Do you have trouble accessing your lecture slides or finding the right books for
 											</picture>
 										</div>
 
-										<div class="mt-2 md:w-1/2">
+										<div className="mt-2 md:w-1/2">
 											<p
-												class="font-title text-xl font-bold tracking-wide text-white lg:text-3xl"
+												className="font-title text-xl font-bold tracking-wide text-white lg:text-3xl"
 											>
 												Ema Watson
 											</p>
 											<span
-												class="mt-2 inline-block rounded-md bg-red-800 px-2 py-1 text-xs text-white shadow-xl backdrop-blur-lg md:bg-emerald-800"
+												className="mt-2 inline-block rounded-md bg-red-800 px-2 py-1 text-xs text-white shadow-xl backdrop-blur-lg md:bg-emerald-800"
 											>
 												BSc Materials Engineering, KNUST
 											</span>
 
 											<p
-												class="font-body mt-4 text-sm leading-relaxed text-white sm:text-base md:text-lg lg:text-xl"
+												className="font-body mt-4 text-sm leading-relaxed text-white sm:text-base md:text-lg lg:text-xl"
 											>
 												“Lorem ipsum dolor sit amet, consectetur adipisicing
 												elit. Tempore quibusdam ducimus libero ad tempora
@@ -553,17 +556,17 @@ Do you have trouble accessing your lecture slides or finding the right books for
 		</main>
 
 	
-		<footer class="footer">
-			<div class="footer_content_wrapper">
-				<div class="footer_link_wrapper">
+		<footer className="footer">
+			<div className="footer_content_wrapper">
+				<div className="footer_link_wrapper">
 					<a
 						href="https://web.facebook.com/bernard.amoah.334"
 						target="_blank"
-						class="footer_links"
+						className="footer_links"
 					>
-						<span class="sr-only">Facebook</span>
+						<span className="sr-only">Facebook</span>
 						<svg
-							class="h-6 w-6"
+							className="h-6 w-6"
 							aria-hidden="true"
 							fill="currentColor"
 							viewBox="0 0 24 24"
@@ -578,11 +581,11 @@ Do you have trouble accessing your lecture slides or finding the right books for
 					<a
 						href="https://www.instagram.com/be_r_n_ard"
 						target="_blank"
-						class="footer_links"
+						className="footer_links"
 					>
-						<span class="sr-only">Instagram</span>
+						<span className="sr-only">Instagram</span>
 						<svg
-							class="h-6 w-6"
+							className="h-6 w-6"
 							aria-hidden="true"
 							fill="currentColor"
 							viewBox="0 0 24 24"
@@ -597,11 +600,11 @@ Do you have trouble accessing your lecture slides or finding the right books for
 					<a
 						href="https://twitter.com/byayamoah"
 						target="_blank"
-						class="footer_links"
+						className="footer_links"
 					>
-						<span class="sr-only">Twitter</span>
+						<span className="sr-only">Twitter</span>
 						<svg
-							class="h-6 w-6"
+							className="h-6 w-6"
 							aria-hidden="true"
 							fill="currentColor"
 							viewBox="0 0 24 24"
@@ -614,11 +617,11 @@ Do you have trouble accessing your lecture slides or finding the right books for
 					<a
 						href="https://github.com/bernardyamoah/"
 						target="_blank"
-						class="footer_links"
+						className="footer_links"
 					>
-						<span class="sr-only">GitHub</span>
+						<span className="sr-only">GitHub</span>
 						<svg
-							class="h-6 w-6"
+							className="h-6 w-6"
 							aria-hidden="true"
 							fill="currentColor"
 							viewBox="0 0 24 24"
@@ -631,7 +634,7 @@ Do you have trouble accessing your lecture slides or finding the right books for
 						</svg>
 					</a>
 				</div>
-				<p class="footer_copyright">
+				<p className="footer_copyright">
 					© <span id="year"></span> BartLabs, Inc. All rights reserved.
 				</p>
 			</div>
@@ -640,7 +643,7 @@ Do you have trouble accessing your lecture slides or finding the right books for
 		
 			
 		
-	</body>
+
 
     </>
   )
