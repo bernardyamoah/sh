@@ -1,7 +1,3 @@
-import Image from 'next/image'
-
-import {slogo} from './../assets/img/2d'
-
 export default function Home() {
   return (
     <>
