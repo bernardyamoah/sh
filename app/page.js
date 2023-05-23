@@ -107,13 +107,13 @@ Do you have trouble accessing your lecture slides or finding the right books for
 							loading="lazy"
 						/>
 					<div className="text-center">
-						<a
+						<Link
 							data-splitbee-event="Get Started"
-							href="./programs.html"
+							href="/programs"
 							className="hero_btn"
 						>
 							Get Started
-						</a>
+						</Link>
 					</div>
 				</div>
 			</section>
@@ -142,13 +142,13 @@ Do you have trouble accessing your lecture slides or finding the right books for
 								</div>
 
 								<div>
-									<a
+									<Link
 										data-splitbee-event="Get Started"
-										href="./programs.html"
+										href="/Programs"
 										className="hero_btn"
 									>
 										Get Started
-									</a>
+									</Link>
 								</div>
 							</div>
 
