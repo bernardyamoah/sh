@@ -1,5 +1,6 @@
+
 import Link from "next/link";
-const Sidebar = () => {
+export default function Sidebar(){
     return (
         <div
         id="hs-overlay-basic"
@@ -39,19 +40,19 @@ const Sidebar = () => {
                     </Link>
                 </li>
                 <li>
-                    <Link className="sidebar_nav_item" href="./programs.html">
+                    <Link className="sidebar_nav_item" href="/programmes">
                         {" "}
                         Programs{" "}
                     </Link>
                 </li>
                 <li>
-                    <Link className="sidebar_nav_item" href="./about.html">
+                    <Link className="sidebar_nav_item" href="/about">
                         {" "}
                         About Us{" "}
                     </Link>
                 </li>
                 <li>
-                    <Link className="sidebar_nav_item" href="./contact.html">
+                    <Link className="sidebar_nav_item" href="/contact">
                         {" "}
                         Contact Us{" "}
                     </Link>
@@ -60,6 +61,5 @@ const Sidebar = () => {
         </nav>
     </div>
     );
-  };
+  }
 
-  export default Sidebar;

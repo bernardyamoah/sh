@@ -8,7 +8,7 @@ import {useTheme} from "next-themes";
 import {useState, useEffect} from "react";
 import Sidebar from "./Sidebar";
 import{SunIcon ,MoonIcon} from "@heroicons/react/solid";
-
+import DarkmodeButton from "./DarkmodeButton";
 const Navbar = () => {
     const {systemTheme , theme, setTheme} = useTheme ();
     const [mounted, setMounted] = useState(false);
@@ -62,6 +62,7 @@ const Navbar = () => {
 					</ul>
 
 					{/* <!-- Dark/Light Mode Button --> */}
+					<DarkmodeButton/>
 					
                     {renderThemeChanger()}
 
