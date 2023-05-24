@@ -4,11 +4,9 @@ import '@/styles/globals.css'
 import { Inter } from 'next/font/google'
 import Navbar from '/components/Navbar'
 import Footer from '/components/Footer'
-import 'flowbite'
 import Head from 'next/head'
-import { useEffect, useState } from 'react';
-import Script from 'next/script'
-
+import ThemeToggle from '@/public/js/ThemeToggle'
+import ColorTheme from '@/public/js/ColorTheme'
 
 
 
@@ -37,25 +35,16 @@ export const metadata = {
 }
 
 export default function RootLayout({ children }) {
-  const [isDarkMode, setIsDarkMode] = useState(false);
-
-  useEffect(() => {
-    // Add code to persist the dark mode state, e.g., using local storage
-    // Retrieve the saved dark mode state and set it to setIsDarkMode
-  }, []);
-
-  const toggleDarkMode = () => {
-    setIsDarkMode(!isDarkMode);
-    // Add code to persist the updated dark mode state
-  };
-
 
   return (
 <>
     <Head>
     <meta name="viewport" content="width=device-width, initial-scale=1"
          />
-         
+    
+  
+         <ColorTheme/>
+   
     </Head>
   
 
@@ -63,7 +52,8 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
       <Navbar/>
       {children}
-    <Script src='/public/js/dm.js'/>
+  
+      <ThemeToggle/>
       <Footer/>
       </body>
       </>

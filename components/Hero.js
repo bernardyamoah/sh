@@ -29,7 +29,7 @@ const Hero = () => {
 					<div className="text-center">
 						<Link
 							data-splitbee-event="Get Started"
-							href="/programs"
+							href="/programmes"
 							className="hero_btn"
 						>
 							Get Started
@@ -64,7 +64,7 @@ const Hero = () => {
 								<div>
 									<Link
 										data-splitbee-event="Get Started"
-										href="/Programs"
+										href="/programmmes"
 										className="hero_btn"
 									>
 										Get Started
