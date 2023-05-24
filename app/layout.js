@@ -5,9 +5,10 @@ import { Inter } from 'next/font/google'
 import Navbar from '/components/Navbar'
 import Footer from '/components/Footer'
 import Head from 'next/head'
-import ThemeToggle from '@/public/js/ThemeToggle'
-import ColorTheme from '@/public/js/ColorTheme'
+import ThemeToggle from '@/components/ThemeToggle'
+import { useEffect } from 'react'
 
+import Script from 'next/script'
 
 
 
@@ -35,15 +36,55 @@ export const metadata = {
 }
 
 export default function RootLayout({ children }) {
+  useEffect(() => {
+    const loadExternalScripts = async () => {
+      const scriptUrls = [
+        '/utils/index.js',
+        '/utils/main.js',
+        '/utils/preline.js'
+        // Add more script URLs as needed
+      ];
 
+      await Promise.all(
+        scriptUrls.map(async (url) => {
+          const script = document.createElement('script');
+          script.src = url;
+          script.async = true;
+          script.onload = resolve;
+          script.onerror = reject;
+          document.body.appendChild(script);
+          
+        })
+      );
+    };
+  
+    loadExternalScripts();
+  }, []);
   return (
 <>
     <Head>
     <meta name="viewport" content="width=device-width, initial-scale=1"
          />
-    
+         <script
+         dangerouslySetInnerHTML={{
+           __html: `
+             // On page load or when changing themes, best to add inline in 'head' to avoid FOUC
+             if (
+               localStorage.getItem('color-theme') === 'dark' ||
+               (!('color-theme' in localStorage) &&
+                 window.matchMedia('(prefers-color-scheme: dark)').matches)
+             ) {
+               document.documentElement.classList.add('dark');
+             } else {
+               document.documentElement.classList.remove('dark');
+             }
+           `,
+         }}
+       />
+       
+
   
-         <ColorTheme/>
+         
    
     </Head>
   
@@ -55,6 +96,7 @@ export default function RootLayout({ children }) {
   
       <ThemeToggle/>
       <Footer/>
+    
       </body>
       </>
   )

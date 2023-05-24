@@ -30,7 +30,7 @@ export default function about() {
 					<div class="mt-8 grid grid-cols-1 gap-8 lg:container md:grid-cols-2 lg:px-24 xl:mt-16 xl:grid-cols-2">
 						{/*   <!-- Team Memeber 1 -->*/}
 
-						<div class="group transform cursor-pointer rounded-xl border px-12 py-8 transition-colors duration-300 hover:border-transparent hover:bg-emerald-600 dark:border-gray-700 dark:hover:border-transparent">
+						<div class="group transform cursor-pointer rounded-xl border px-6 py-8 transition-colors duration-300 hover:border-transparent hover:bg-emerald-600 dark:border-gray-700 dark:hover:border-transparent">
 							<div class="flex flex-col sm:-mx-4 sm:flex-row">
 								<img
 									class="h-24 w-24 flex-shrink-0 rounded-full object-cover ring-4 ring-emerald-500 transition-colors duration-300 group-hover:ring-transparent sm:mx-4"
@@ -39,17 +39,17 @@ export default function about() {
 								/>
 
 								<div class="mt-4 sm:mx-4 sm:mt-0">
-									<h1 class="text-xl font-semibold capitalize text-gray-700 group-hover:text-white dark:text-white md:text-2xl">
+									<h1 class="text-xl font-semibold capitalize text-gray-700 group-hover:text-white dark:text-white md:text-xl">
 										Bernard Y. A. Yamoah
 									</h1>
 
-									<p class="mt-2 capitalize text-emerald-500 group-hover:text-gray-50 dark:text-emerald-400">
+									<p class="mt-2 capitalize text-emerald-500 text-sm group-hover:text-gray-50 dark:text-emerald-400">
 										CEO, Founder, Developer
 									</p>
 								</div>
 							</div>
 
-							<p class="mt-4 text-sm capitalize text-gray-500 group-hover:text-gray-200 dark:text-gray-400 sm:text-base">
+							<p class="mt-4 text-sm capitalize text-gray-500 group-hover:text-gray-200 dark:text-gray-400 sm:text-sm">
 								With 3+ years of experience in the coding I'm passionate about
 								using technology to improve the learning experience for all. I'm
 								dedicated to building a strong, supportive team and creating a
@@ -105,7 +105,7 @@ export default function about() {
 						</div>
 
 						{/*       <!-- Team Memeber 2 -->*/}
-						<div class="group transform cursor-pointer rounded-xl border px-12 py-8 transition-colors duration-300 hover:border-transparent hover:bg-emerald-600 dark:border-gray-700 dark:hover:border-transparent">
+						<div class="group transform cursor-pointer rounded-xl border px-6 py-8 transition-colors duration-300 hover:border-transparent hover:bg-emerald-600 dark:border-gray-700 dark:hover:border-transparent">
 							<div class="flex flex-col sm:-mx-4 sm:flex-row">
 								<img
 									class="h-24 w-24 flex-shrink-0 rounded-full object-cover ring-4 ring-emerald-500 transition-colors duration-300 group-hover:ring-transparent sm:mx-4"
@@ -114,17 +114,17 @@ export default function about() {
 								/>
 
 								<div class="mt-4 sm:mx-4 sm:mt-0">
-									<h1 class="text-xl font-semibold capitalize text-gray-700 group-hover:text-white dark:text-white md:text-2xl">
+									<h1 class="text-xl font-semibold capitalize text-gray-700 group-hover:text-white dark:text-white md:text-xl">
 										Joseph Adofo Nyarko
 									</h1>
 
-									<p class="mt-2 capitalize text-emerald-500 group-hover:text-gray-50 dark:text-gray-100">
+									<p class="mt-2 capitalize text-emerald-500 text-sm group-hover:text-gray-50 dark:text-gray-100">
 										Developer
 									</p>
 								</div>
 							</div>
 
-							<p class="mt-4 text-sm capitalize text-gray-500 group-hover:text-gray-100 dark:text-gray-400 sm:text-base">
+							<p class="mt-4 text-sm capitalize text-gray-500 group-hover:text-gray-100 dark:text-gray-400 sm:text-sm">
 								A developer who is dedicated to staying at the forefront of the
 								latest technologies. I am always learning and constantly
 								exploring new ways to improve his skills. With a passion for
