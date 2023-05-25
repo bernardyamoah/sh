@@ -3,6 +3,16 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --color-body: #111827; /* cinza escuro */
+  --color-background: #f9fafb; /* cinza claro */
+}
+
+[data-theme="dark"] {
+  --color-body: #f9fafb; /* cinza claro */
+  --color-background: #111827; /* cinza claro */
+}
+
 @layer base{
     body{
       @apply !pt-10  bg-white dark:bg-slate-900 font-body

@@ -1,10 +1,12 @@
-import '@/styles/globals.css';
-import { useEffect } from 'react';
+
+import { ThemeProvider } from "next-themes";
+
+import "../styles/globals.css";
 
 export default function App({ Component, pageProps }) {
-  useEffect(() => {
-    // No need for the import('preline') statement here
-  }, []);
-
-  return <Component {...pageProps} />;
+  return (
+    <ThemeProvider attribute="class">
+      <Component {...pageProps} />
+    </ThemeProvider>
+  );
 }
