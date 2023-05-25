@@ -1,7 +1,27 @@
 import Image from 'next/image';
 import Head from 'next/head';
+import Link from 'next/link';
 
 export default function Home() {
+	let Links = [
+		{
+			name : "Home", link: "/"
+		},
+		{
+			name : "Programs", link : "./programs.html"
+		},
+		{
+			name : "About Us", link : "./about.html"
+		},
+		{
+			name : "Contact Us", link : "./contact.html"
+		}
+	]
+
+
+
+
+
   return (
     <>
 	<Head>
@@ -121,13 +141,14 @@ Do you have trouble accessing your lecture slides or finding the right books for
 				</div>
 				{/* <!-- Logo --> */}
 				<a className="flex items-center space-x-2" href="/">
-					<Image
-					width={144}
-					height={144}
-						src="/assets/img/logo-icon-dark.png"
+					<Image				
+						src="/assets/img/logo-icon-light.png"
 						className="logo_icon_dark"
-						alt="logo"/>
-				
+						alt="logo"	
+						width={5}
+					    height={5}
+						/>
+						
 					<Image
 					width={140}
 					height={140}
@@ -219,20 +240,20 @@ Do you have trouble accessing your lecture slides or finding the right books for
 			</div>
 
 			<nav className="sidebar_nav">
-				<ul className="sidebar_ul">
-					<li>
-						<a className="sidebar_nav_item" href="/"> Home </a>
-					</li>
-					<li>
-						<a className="sidebar_nav_item" href="./programs.html"> Programs </a>
-					</li>
-					<li>
-						<a className="sidebar_nav_item" href="./about.html"> About Us </a>
-					</li>
-					<li>
-						<a className="sidebar_nav_item" href="./contact.html"> Contact Us </a>
-					</li>
-				</ul>
+
+
+				<div className="sidebar_ul">
+				{Links.map((link, index) => (
+					<Link href={link.link} key={index} className="sidebar_nav_item">
+					
+						
+						<span className="sidebar_nav_item">{link.name}</span>
+						<span class="sidebar_nav_item">{link.name}</span>
+					
+					</Link>
+				  ))
+				  }
+				</div>
 			</nav>
 		</div>
 		{/* <!-- End of  Sidebar --> */}
