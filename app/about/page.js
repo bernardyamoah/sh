@@ -1,23 +1,26 @@
-import React from "react";
+'use client'
 import Link from "next/link";
+import Image from "next/image";
+import userImage1 from "/assets/img/logo-icon-light.png"
+import userImage2 from "/assets/img/logo-icon-light.png"
 export default function about() {
 	return (
 		<>
-			<section class="heading-link">
+			<section className="heading-link">
 				<h3>about us</h3>
 				<p>
 					<Link href="/">home</Link> / about
 				</p>
 			</section>
 
-			<section class="bg-white dark:bg-gray-900">
-				<div class="mx-auto mt-10 py-10 lg:container">
-					<h1 class="text-3xl font-semibold capitalize text-gray-800 dark:text-white md:text-center md:text-4xl">
+			<section className="bg-white dark:bg-gray-900">
+				<div className="mx-auto mt-10 py-10 lg:container">
+					<h1 className="text-3xl font-semibold capitalize text-gray-800 dark:text-white md:text-center md:text-4xl">
 						Meet the team behind the
-						<span class="text-emerald-500 ml-1">Startup!</span>
+						<span className="text-emerald-500 ml-1">Startup!</span>
 					</h1>
 
-					<p class="mx-auto my-6 text-base text-gray-500 md:container dark:text-gray-300 md:text-center lg:px-20 lg:text-xl">
+					<p className="mx-auto my-6 text-base text-gray-500 md:container dark:text-gray-300 md:text-center lg:px-20 lg:text-xl">
 						Our team is made up of dedicated and passionate individuals who work
 						hard to deliver the best products and services to our clients. We
 						pride ourselves on our diverse skills and backgrounds, and believe
@@ -27,43 +30,43 @@ export default function about() {
 						please don't hesitate to reach out to us.
 					</p>
 
-					<div class="mt-8 grid grid-cols-1 gap-8 lg:container md:grid-cols-2 lg:px-24 xl:mt-16 xl:grid-cols-2">
+					<div className="mt-8 grid grid-cols-1 gap-8 lg:container md:grid-cols-2 lg:px-24 xl:mt-16 xl:grid-cols-2">
 						{/*   <!-- Team Memeber 1 -->*/}
 
-						<div class="group transform cursor-pointer rounded-xl border px-6 py-8 transition-colors duration-300 hover:border-transparent hover:bg-emerald-600 dark:border-gray-700 dark:hover:border-transparent">
-							<div class="flex flex-col sm:-mx-4 sm:flex-row">
-								<img
-									class="h-24 w-24 flex-shrink-0 rounded-full object-cover ring-4 ring-emerald-500 transition-colors duration-300 group-hover:ring-transparent sm:mx-4"
-									src="assets/img/photo_2022-07-30_19-42-06.jpg"
+						<div className="group transform cursor-pointer rounded-xl border px-6 py-8 transition-colors duration-300 hover:border-transparent hover:bg-emerald-600 dark:border-gray-700 dark:hover:border-transparent">
+							<div className="flex flex-col sm:-mx-4 sm:flex-row">
+								<Image width={200} height={200} 
+									className="h-24 w-24 flex-shrink-0 rounded-full object-cover ring-4 ring-emerald-500 transition-colors duration-300 group-hover:ring-transparent sm:mx-4"
+									src={userImage1}
 									alt="Bernard Y. Amoah Yamoah"
 								/>
 
-								<div class="mt-4 sm:mx-4 sm:mt-0">
-									<h1 class="text-xl font-semibold capitalize text-gray-700 group-hover:text-white dark:text-white md:text-xl">
+								<div className="mt-4 sm:mx-4 sm:mt-0">
+									<h1 className="text-xl font-semibold capitalize text-gray-700 group-hover:text-white dark:text-white md:text-xl">
 										Bernard Y. A. Yamoah
 									</h1>
 
-									<p class="mt-2 capitalize text-emerald-500 text-sm group-hover:text-gray-50 dark:text-emerald-400">
+									<p className="mt-2 capitalize text-emerald-500 text-sm group-hover:text-gray-50 dark:text-emerald-400">
 										CEO, Founder, Developer
 									</p>
 								</div>
 							</div>
 
-							<p class="mt-4 text-sm capitalize text-gray-500 group-hover:text-gray-200 dark:text-gray-400 sm:text-sm">
+							<p className="mt-4 text-sm capitalize text-gray-500 group-hover:text-gray-200 dark:text-gray-400 sm:text-sm">
 								With 3+ years of experience in the coding I'm passionate about
 								using technology to improve the learning experience for all. I'm
 								dedicated to building a strong, supportive team and creating a
 								positive impact in the community.
 							</p>
 
-							<div class="-mx-2 mt-4 flex">
+							<div className="-mx-2 mt-4 flex">
 								<Link
 									href="https://twitter.com/byayamoah"
-									class="mx-2 text-gray-600 hover:text-gray-500 group-hover:text-white dark:text-gray-300 dark:hover:text-gray-300"
+									className="mx-2 text-gray-600 hover:text-gray-500 group-hover:text-white dark:text-gray-300 dark:hover:text-gray-300"
 									aria-label="Twitter"
 								>
 									<svg
-										class="mx-auto h-5 w-5 fill-current"
+										className="mx-auto h-5 w-5 fill-current"
 										viewBox="0 0 24 24"
 										fill="none"
 										xmlns="http://www.w3.org/2000/svg"
@@ -74,11 +77,11 @@ export default function about() {
 
 								<Link
 									href="https://www.linkedin.com/in/bernard-yamoah-971386132/"
-									class="mx-2 text-gray-600 hover:text-gray-500 group-hover:text-white dark:text-gray-300 dark:hover:text-gray-300"
+									className="mx-2 text-gray-600 hover:text-gray-500 group-hover:text-white dark:text-gray-300 dark:hover:text-gray-300"
 									aria-label="LinkedIn"
 								>
 									<svg
-										class="h-5 w-5 fill-current"
+										className="h-5 w-5 fill-current"
 										viewBox="0 0 24 24"
 										fill="none"
 										xmlns="http://www.w3.org/2000/svg"
@@ -89,11 +92,11 @@ export default function about() {
 
 								<Link
 									href="https://github.com/bernardyamoah"
-									class="mx-2 text-gray-600 hover:text-gray-500 group-hover:text-white dark:text-gray-300 dark:hover:text-gray-300"
+									className="mx-2 text-gray-600 hover:text-gray-500 group-hover:text-white dark:text-gray-300 dark:hover:text-gray-300"
 									aria-label="Github"
 								>
 									<svg
-										class="h-6 w-6 fill-current"
+										className="h-6 w-6 fill-current"
 										viewBox="0 0 24 24"
 										fill="none"
 										xmlns="http://www.w3.org/2000/svg"
@@ -105,26 +108,26 @@ export default function about() {
 						</div>
 
 						{/*       <!-- Team Memeber 2 -->*/}
-						<div class="group transform cursor-pointer rounded-xl border px-6 py-8 transition-colors duration-300 hover:border-transparent hover:bg-emerald-600 dark:border-gray-700 dark:hover:border-transparent">
-							<div class="flex flex-col sm:-mx-4 sm:flex-row">
-								<img
-									class="h-24 w-24 flex-shrink-0 rounded-full object-cover ring-4 ring-emerald-500 transition-colors duration-300 group-hover:ring-transparent sm:mx-4"
-									src="./img/photo_2022-07-30_19-33-36.jpg"
-									alt="Joseph Adofo"
-								/>
+						<div className="group transform cursor-pointer rounded-xl border px-6 py-8 transition-colors duration-300 hover:border-transparent hover:bg-emerald-600 dark:border-gray-700 dark:hover:border-transparent">
+							<div className="flex flex-col sm:-mx-4 sm:flex-row">
+							<Image width={200} height={200} 
+							className="h-24 w-24 flex-shrink-0 rounded-full object-cover ring-4 ring-emerald-500 transition-colors duration-300 group-hover:ring-transparent sm:mx-4"
+							src={userImage2}
+							alt="Joeseph Adofo"
+						/>
 
-								<div class="mt-4 sm:mx-4 sm:mt-0">
-									<h1 class="text-xl font-semibold capitalize text-gray-700 group-hover:text-white dark:text-white md:text-xl">
+								<div className="mt-4 sm:mx-4 sm:mt-0">
+									<h1 className="text-xl font-semibold capitalize text-gray-700 group-hover:text-white dark:text-white md:text-xl">
 										Joseph Adofo Nyarko
 									</h1>
 
-									<p class="mt-2 capitalize text-emerald-500 text-sm group-hover:text-gray-50 dark:text-gray-100">
+									<p className="mt-2 capitalize text-emerald-500 text-sm group-hover:text-gray-50 dark:text-gray-100">
 										Developer
 									</p>
 								</div>
 							</div>
 
-							<p class="mt-4 text-sm capitalize text-gray-500 group-hover:text-gray-100 dark:text-gray-400 sm:text-sm">
+							<p className="mt-4 text-sm capitalize text-gray-500 group-hover:text-gray-100 dark:text-gray-400 sm:text-sm">
 								A developer who is dedicated to staying at the forefront of the
 								latest technologies. I am always learning and constantly
 								exploring new ways to improve his skills. With a passion for
@@ -132,14 +135,14 @@ export default function about() {
 								high-quality results for the benefit of my team.
 							</p>
 
-							<div class="-mx-2 mt-4 flex">
+							<div className="-mx-2 mt-4 flex">
 								<Link
 									href="#"
-									class="mx-2 text-gray-600 hover:text-gray-500 group-hover:text-white dark:text-gray-200 dark:hover:text-gray-300"
+									className="mx-2 text-gray-600 hover:text-gray-500 group-hover:text-white dark:text-gray-200 dark:hover:text-gray-300"
 									aria-label="Reddit"
 								>
 									<svg
-										class="h-6 w-6 fill-current"
+										className="h-6 w-6 fill-current"
 										viewBox="0 0 24 24"
 										fill="none"
 										xmlns="http://www.w3.org/2000/svg"
@@ -150,11 +153,11 @@ export default function about() {
 
 								<Link
 									href="#"
-									class="mx-2 text-gray-600 hover:text-gray-500 group-hover:text-white dark:text-gray-300 dark:hover:text-gray-300"
+									className="mx-2 text-gray-600 hover:text-gray-500 group-hover:text-white dark:text-gray-300 dark:hover:text-gray-300"
 									aria-label="Facebook"
 								>
 									<svg
-										class="h-6 w-6 fill-current"
+										className="h-6 w-6 fill-current"
 										viewBox="0 0 24 24"
 										fill="none"
 										xmlns="http://www.w3.org/2000/svg"
@@ -165,11 +168,11 @@ export default function about() {
 
 								<Link
 									href="#"
-									class="mx-2 text-gray-600 hover:text-gray-500 group-hover:text-white dark:text-gray-300 dark:hover:text-gray-300"
+									className="mx-2 text-gray-600 hover:text-gray-500 group-hover:text-white dark:text-gray-300 dark:hover:text-gray-300"
 									aria-label="Github"
 								>
 									<svg
-										class="h-6 w-6 fill-current"
+										className="h-6 w-6 fill-current"
 										viewBox="0 0 24 24"
 										fill="none"
 										xmlns="http://www.w3.org/2000/svg"

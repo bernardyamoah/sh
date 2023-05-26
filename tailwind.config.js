@@ -22,7 +22,6 @@ module.exports = {
     },
   },
   plugins: [
-    require('flowbite/plugin'),
-  require('preline/plugin')
+
   ],
 }

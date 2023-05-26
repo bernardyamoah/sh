@@ -1,11 +1,7 @@
 "use client";
-import { React } from 'react';
-import "swiper/css/bundle";
-// import Swiper core and required modules
-import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper';
-import { Swiper, SwiperSlide,useSwiper } from 'swiper/react';
+
 export default function Testimonials() {
-	const swiper = useSwiper();
+
 	
 	return (
 		<>
@@ -20,17 +16,9 @@ export default function Testimonials() {
 					<main className="relative z-20 mt-8 w-full md:flex md:items-center xl:mt-12">
 						<div className="absolute -z-10 w-full rounded-2xl bg-emerald-600 md:h-96"></div>
 						<div className=" mySwiper w-full rounded-2xl bg-gradient-to-bl from-red-500 via-red-600 to-red-700 p-6 shadow-lg md:flex md:items-center md:justify-evenly md:bg-none md:p-0 md:shadow-none lg:px-12">
-						<Swiper  modules={[Navigation, Scrollbar, Pagination,A11y,Autoplay]}
-						spaceBetween={50}
-						slidesPerView={2}
-						navigation
-						autoplay
-						pagination={{ clickable: true }}
-						scrollbar={{ draggable: true }}
-						onSwiper={(swiper) => console.log(swiper)}
-						onSlideChange={() => console.log('slide change')}>
+						<section  >
 							
-								<SwiperSlide>
+								<aside>
 									<div className="p-6 md:flex md:items-center md:space-x-10">
 										<div className="md:w-1/2">
 											<img
@@ -56,10 +44,10 @@ export default function Testimonials() {
 											</p>
 										</div>
 									</div>
-								</SwiperSlide>
+								</aside>
 
 							{/* Second slide*/ }
-								<SwiperSlide>
+								<aside>
 									<div className="p-6 md:flex md:items-center md:space-x-10">
 										<div className="md:w-1/2">
 											<img
@@ -85,10 +73,10 @@ export default function Testimonials() {
 											</p>
 										</div>
 									</div>
-								</SwiperSlide>
-								</Swiper>
+								</aside>
+								</section>
 								</div>
-								<button onClick={() => swiper.slideNext()}>Slide to the next slide</button>
+							
 					</main>
 				</div>
 			</section>

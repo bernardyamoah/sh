@@ -1,5 +1,4 @@
 'use client'
-import React from 'react'
 import Image from 'next/image'
 import heroimage1 from 'assets/img/hero-image-2.png'
 import heroimage2 from '/assets/img/details-1.png'
@@ -90,3 +89,4 @@ const Hero = () => {
 }
 
 export default Hero
+

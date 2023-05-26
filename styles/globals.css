@@ -33,27 +33,14 @@
     .heading{
       @apply text-center mb-12 capitalize text-2xl md:text-3xl text-slate-800 dark:text-slate-50 font-bold;
     }
-    .theme_toggle{
-      @apply inline-flex h-9 w-9 flex-shrink-0 items-center justify-center text-base font-medium 
-    }
+  
     .nav-bar{
       @apply font-body font-bold
     }
     .navbar_item{
       @apply  font-bold text-black hover:text-emerald-600 dark:text-gray-50 dark:hover:text-emerald-400
     }
-    .sidebar_logo{
-      @apply flex-none text-xl font-semibold dark:text-white text-black
-    }
-    .sidebar_nav{
-      @apply flex w-full flex-col flex-wrap py-6 font-body h-[90%] justify-center
-    }
-    .sidebar_ul{
-      @apply  text-lg flex flex-col justify-center  self-center text-left w-full overflow-hidden
-    }
-    .sidebar_nav_item{
-      @apply  font-bold pl-10 rounded-l-full hover:translate-x-6 origin-right transition-transform duration-200 py-4 hover:bg-emerald-500 dark:hover:shadow-emerald-500/20 hover:shadow-lg  text-4xl text-slate-700 hover:text-white mt-4 dark:text-white dark:hover:bg-emerald-500 dark:hover:text-slate-50 block
-    }
+    
     
     
     /* --------------- logo -------------------- */
@@ -280,46 +267,6 @@
     pointer-events: none;
     
   }
-  .nav-bar .search-icon {
-    
-    font-size: 20px;
-    cursor: pointer;
-  }
-  .nav-bar .search-box {
-    position: absolute;
-    
-    height: 45px;
-    
-    opacity: 0;
-    pointer-events: none;
-    transition: all 0.2s linear;
-  }
-  .nav-bar.openSearch .search-box {
-    opacity: 1;
-    pointer-events: auto;
-  }
-  .search-box .search-icon {
-    position: absolute;
-    left: 15px;
-    top: 50%;
-    left: 15px;
-    color: #11af87;
-    transform: translateY(-50%);
-  }
-  .search-box input {
-    height: 100%;
-   
-    border: none;
-    outline: none;
-    border-radius: 6px;
-  
-    padding: 0 15px 0 45px;
-  }
-  
-  .nav-bar .navOpenBtn,
-  .nav-bar .navCloseBtn {
-    display: none;
-  }
   
   /* responsive */
   @media screen and (max-width: 1160px) {
@@ -438,75 +385,6 @@
   }
   
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
-   .faq .accordion-container .accordion {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 40rem;
-            flex: 1 1 40rem;
-          
-    border: 0.1rem solid #0eb582;
-  }
-  
-  .faq .accordion-container .accordion.active .accordion-heading {
-    background: #0eb582;
-  }
-  
-  .faq .accordion-container .accordion.active .accordion-heading h3 {
-    color: #fff;
-  }
-  
-  .faq .accordion-container .accordion.active .accordion-heading i {
-    color: #fff;
-    -webkit-transform: rotate(180deg);
-            transform: rotate(180deg);
-  }
-  
-  .faq .accordion-container .accordion.active .accordion-content {
-    display: block;
-  }
-  
-  .faq .accordion-container .accordion .accordion-heading {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    gap: 1rem;
-    cursor: pointer;
-    padding: 1.5rem;
-  }
-  
-  .faq .accordion-container .accordion .accordion-heading h3 {
-    font-size: 1.2rem;
-    text-transform: capitalize;
-  
-  }
-  
-  .faq .accordion-container .accordion .accordion-heading i {
-    font-size: 1.5rem;
-    color: #0eb582;
-  }
-  
-  .faq .accordion-container .accordion .accordion-content {
-    padding: 1.5rem;
-    font-size: 1rem;
-    line-height: 2;
-    color: #777;
-    border-top: 0.1rem solid #0eb582;
-    display: none;
-  }
   
   
   
