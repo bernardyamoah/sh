@@ -1,10 +1,13 @@
-"use client";
+'use client'
 
 import "@/styles/globals.css";
 import { Inter } from "next/font/google";
 import Navbar from "/components/Navbar";
 import Footer from "/components/Footer";
 import Head from "next/head";
+import { useTheme } from 'next-themes';
+import { Switch } from '@headlessui/react';
+
 import Link from "next/link";
 const inter = Inter({ subsets: ["latin"] });
 const metadata = {
@@ -28,7 +31,11 @@ const metadata = {
 };
 
 export default function RootLayout({ children }) {
+	const { theme, setTheme } = useTheme();
 
+	const toggleTheme = () => {
+	  setTheme(theme === 'light' ? 'dark' : 'light');
+	};
 	return (
 		<>
 			<Head>
