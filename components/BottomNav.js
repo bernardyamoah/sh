@@ -37,8 +37,8 @@ export default function BottomNav() {
 
 	return (
 		<>
-			<div class="fixed md:hidden bottom-0 left-0 z-50 w-full h-16 bg-white/90 backdrop-blur-lg border-t border-gray-200 dark:bg-gray-700 dark:border-gray-600">
-				<div class="grid h-full max-w-xl grid-cols-6 mx-auto">
+			<div class="fixed md:hidden bottom-0 left-0 z-50 w-full h-16 bg-white  border-t border-gray-200 dark:bg-gray-900 dark:border-gray-600">
+				<div class="grid h-full max-w-xl grid-cols-5 mx-auto">
 					
 					{Links.map((link, index) => (
 					<Link href={link.link} key={index} 
