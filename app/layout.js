@@ -31,11 +31,7 @@ const metadata = {
 };
 
 export default function RootLayout({ children }) {
-	const { theme, setTheme } = useTheme();
 
-	const toggleTheme = () => {
-	  setTheme(theme === 'light' ? 'dark' : 'light');
-	};
 	return (
 		<>
 			<Head>

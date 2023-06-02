@@ -2,7 +2,7 @@
 import Logo from "./Logo";
 import Link from "next/link";
 import BottomNav from "./BottomNav";
-import DarkmodeButton from "./DarkmodeButton";
+
 
 export default function Navbar() {
 	let Links = [
@@ -17,6 +17,10 @@ export default function Navbar() {
 		{
 			name: "Books",
 			link: "/books",
+		},
+		{
+			name: "News",
+			link: "/news",
 		},
 		{
 			name: "About Us",
@@ -44,7 +48,7 @@ export default function Navbar() {
 							</li>
 						))}
 					</ul>
-					<DarkmodeButton />
+			
 
 					<BottomNav />
 				</div>

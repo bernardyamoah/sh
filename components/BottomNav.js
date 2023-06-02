@@ -1,6 +1,6 @@
 'use client'
 import Link from "next/link";
-import DarkmodeButton from "./DarkmodeButton";
+
 export default function BottomNav() {
 	let Links = [
 		{
@@ -51,7 +51,7 @@ export default function BottomNav() {
 						</span>
 					</Link>
 					))}
-					<DarkmodeButton/>
+				
 				</div>
 			</div>
 		</>

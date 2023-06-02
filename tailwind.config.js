@@ -9,6 +9,9 @@ module.exports = {
     './node_modules/preline/dist/*.js',
   ],
   theme: {
+    container: {
+      center: true,
+    },
     extend: {
       fontFamily: {
         // body: ["Valera Round", "sans-serif"],
